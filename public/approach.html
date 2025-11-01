@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Approach to Designing a Better Health Insurance Plan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<main class="container prose">
+<p>Perfect — that’s a mission statement I can get behind. Let’s start by breaking this into layers so we can design something that’s both <strong>radically better for members</strong> and <strong>operationally viable</strong>.</p>
+<h2>🩺 Step 1: Define What “Doesn’t Suck” Means</h2>
+<p>Here’s what most people hate about health insurance:</p>
+<ol>
+<li><strong>Complexity</strong> – jargon, hidden networks, and incomprehensible EOBs.</li>
+<li><strong>Lack of transparency</strong> – you don’t know costs until after the bill arrives.</li>
+<li><strong>Misaligned incentives</strong> – insurers profit when you don’t get care.</li>
+<li><strong>Poor member experience</strong> – phone queues, billing errors, no empathy.</li>
+<li><strong>Inflexibility</strong> – one-size-fits-all plans and opaque provider networks.</li>
+</ol>
+<p>So let’s define “doesn’t suck” as:</p>
+<ul>
+<li><strong>Transparent:</strong> clear pricing and coverage.</li>
+<li><strong>Aligned:</strong> insurer and patient incentives match (e.g. reward preventive care).</li>
+<li><strong>Personalized:</strong> plans adapt to individual or family health needs.</li>
+<li><strong>Tech-enabled:</strong> digital-first with strong data portability.</li>
+<li><strong>Community-based:</strong> supports local providers, clinics, and wellness networks.</li>
+</ul>
+<h2>⚙️ Step 2: Core Architecture</h2>
+<table>
+<thead>
+<tr><th>Layer</th><th>Description</th><th>Examples</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Plan Design</strong></td><td>Modular benefits that users can customize like Lego blocks.</td><td>Base + add-ons: dental, mental health, chronic care.</td></tr>
+<tr><td><strong>Funding Model</strong></td><td>Use value-based or cooperative pools instead of pure risk pools.</td><td>Premiums partially pooled with local community health fund.</td></tr>
+<tr><td><strong>Claims Engine</strong></td><td>Transparent, API-driven PAS (Policy Administration System).</td><td>Something like your <strong>Lucerna PAS</strong>, but member-facing.</td></tr>
+<tr><td><strong>Provider Network</strong></td><td>Open, with transparent contracts and telehealth-first coverage.</td><td>“Network-free” care with tiered reimbursements.</td></tr>
+<tr><td><strong>Member Experience</strong></td><td>Unified portal + app with real-time cost + care guidance.</td><td>Integrate with APIs (FHIR, HL7) for personal health data portability.</td></tr>
+</tbody>
+</table>
+<h2>💡 Step 3: Key Innovations</h2>
+<ol>
+<li><strong>Transparent pricing engine:</strong> publish procedure-level prices (via FHIR + machine-readable APIs).</li>
+<li><strong>Member dividend model:</strong> any year the plan runs a surplus, members share in it.</li>
+<li><strong>AI-driven navigation:</strong> “health concierge” that finds affordable, high-quality care options.</li>
+<li><strong>Community reinvestment:</strong> a % of premiums funds local health or nutrition programs.</li>
+<li><strong>Preventive incentives:</strong> lower premiums for participating in health goals, screenings, etc.</li>
+<li><strong>Portable coverage:</strong> decouple insurance from employer — continuous identity &amp; benefit continuity.</li>
+</ol>
+<h2>💰 Step 4: Business Model Options</h2>
+<table>
+<thead>
+<tr><th>Model</th><th>Description</th><th>Strength</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Mutual cooperative</strong></td><td>Member-owned, profits reinvested.</td><td>Trust + transparency.</td></tr>
+<tr><td><strong>Tech-forward MGA</strong></td><td>Partner with existing carriers for underwriting, own UX layer.</td><td>Fastest to launch.</td></tr>
+<tr><td><strong>Self-funded platform</strong></td><td>Build infrastructure for employers to self-insure transparently.</td><td>Scalable SaaS model.</td></tr>
+<tr><td><strong>Hybrid DAO</strong></td><td>Tokenize member participation, with health credits or governance votes.</td><td>Experimental but aligned incentives.</td></tr>
+</tbody>
+</table>
+<h2>🔧 Step 5: Implementation Stack</h2>
+<p>You could pair:</p>
+<ul>
+<li><strong>Micronaut / Kotlin backend</strong> (your strength) for PAS + claims logic.</li>
+<li><strong>FHIR-compliant data layer</strong> using Couchbase or Postgres.</li>
+<li><strong>API Gateway</strong> (Envoy / Cloudflare Workers) for secure provider + member endpoints.</li>
+<li><strong>Frontend:</strong> React/Next.js app for members, with cost estimates + care navigation.</li>
+<li><strong>AI layer:</strong> Python/LLM for concierge and plan guidance.</li>
+</ul>
+<h2>🧭 Step 6: Go-to-Market Ideas</h2>
+<ul>
+<li>Target <strong>independent professionals</strong> and <strong>LLC owners</strong> first (frustrated by current options).</li>
+<li>Partner with <strong>direct primary care (DPC)</strong> networks and <strong>telehealth providers</strong>.</li>
+<li>Launch as <strong>“Transparent Health Co.”</strong> or <strong>“Lucerna Health Mutual.”</strong></li>
+<li>Offer simple tiers: <em>Preventive</em>, <em>Everyday</em>, <em>Catastrophic</em>, modular add-ons.</li>
+</ul>
+<p>Would you like me to:</p>
+<ol>
+<li>Sketch the <strong>plan structure</strong> (tiers, deductibles, copays, incentives)?</li>
+<li>Design the <strong>system architecture</strong> (APIs, claims workflow, FHIR schema)?</li>
+<li>Outline the <strong>business model and regulatory path</strong> (e.g., self-funded vs. licensed insurer)?</li>
+</ol>
+<p>Which direction do you want to go first?</p>
+
+</main>
+</body>
+</html>

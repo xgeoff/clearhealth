@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>ClearHealth from the Provider&#x27;s Perspective</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<main class="container prose">
+<p>Fantastic and absolutely the <em>right</em> question — this is the exact point where most new health plans fail:
+they design for members but not for <strong>the front desk at the doctor’s office</strong>.</p>
+<p>Let’s walk through what it looks like <strong>from the provider’s perspective</strong>, step by step, and how to make sure you’re <em>easier to deal with than any traditional insurer</em> — not more work.</p>
+<h2>🏥 1. Setting the Scene: The Small Clinic Reality</h2>
+<p>Think of your average small family practice or independent clinic:</p>
+<ul>
+<li>2–5 clinicians</li>
+<li>A front-desk team who do <em>everything</em> — scheduling, billing, claims</li>
+<li>Their billing software (Athena, Kareo, AdvancedMD, DrChrono, etc.) is built for <strong>CPT → claim → insurer portal → wait 45 days → EOB → adjust → rebill</strong></li>
+</ul>
+<p>They hate:</p>
+<ul>
+<li>Rejections (“payer ID missing”)</li>
+<li>Pre-authorizations</li>
+<li>Denials after 60 days</li>
+<li>Not knowing what they’ll actually be paid</li>
+</ul>
+<p>Their dream?
+➡ <strong>Swipe a card or click “pay” and be done.</strong></p>
+<h2>🩺 2. What Happens When You Walk In With ClearHealth</h2>
+<p>Let’s say you show your <strong>ClearHealth Member Card</strong>.</p>
+<p>The front desk sees:</p>
+<ul>
+<li>“ClearHealth – Reference-based HDHP”</li>
+<li>“Pay direct, HSA-eligible. See portal for real-time pricing.”</li>
+</ul>
+<p>They have <strong>three easy options</strong>, depending on how modern they are.</p>
+<h3><strong>Option 1 — The Modern Route (Preferred)</strong></h3>
+<p>✅ <em>Instant price + instant payment</em></p>
+<ol>
+<li>
+<p>Provider logs into <strong>ClearHealth Provider Portal</strong> (simple web app).</p>
+</li>
+<li>
+<p>They type the CPT code (e.g., 99213 for office visit).</p>
+</li>
+<li>
+<p>Portal instantly shows:</p>
+<ul>
+<li>Medicare rate: $95</li>
+<li>ClearHealth reimbursement: 120% = $114</li>
+<li>“Collect from patient? Pre-deductible → yes.”</li>
+</ul>
+</li>
+<li>
+<p>They click “Submit” and either:</p>
+<ul>
+<li>Charge $114 to the member’s HSA-linked card <strong>immediately</strong>, or</li>
+<li>Send an electronic invoice (ACH/Stripe).</li>
+</ul>
+</li>
+</ol>
+<p>📅 Payment to provider: within <strong>48 hours</strong>.
+No claim denials. No waiting. No pre-auth.</p>
+<h3><strong>Option 2 — The “Cash Price” Route (Common Early On)</strong></h3>
+<p>✅ <em>Use existing workflow — no portal, no EDI</em></p>
+<p>If they already have a <strong>cash price list</strong>, you tell them:</p>
+<blockquote>
+<p>“Bill me your normal self-pay price or your Medicare rate × 1.2 — whichever is lower.
+You’ll be paid electronically within 2 business days.”</p>
+</blockquote>
+<p>They send a PDF or itemized invoice to <a href="mailto:claims@clearhealth.io">claims@clearhealth.io</a> or upload to your site.
+ClearHealth processes it automatically.</p>
+<p>📅 Payment: within 48 hours via ACH.</p>
+<p>This fits perfectly with practices that already see uninsured or DPC patients — <em>you’re just another fast-paying, low-hassle patient.</em></p>
+<h3><strong>Option 3 — The “Old-School Claim” Route</strong></h3>
+<p>✅ <em>EDI-friendly fallback</em></p>
+<p>If they insist on using their billing system:</p>
+<ul>
+<li>You provide a <strong>payer ID</strong> (via clearinghouse like Eligible.io).</li>
+<li>They submit an 837 claim as usual.</li>
+<li>ClearHealth adjudicates in hours, not weeks.</li>
+</ul>
+<p>📅 Payment: 3–5 days.</p>
+<p>They don’t have to learn anything new — but you still control the experience and transparency.</p>
+<h2>💡 3. How They Know What to Charge</h2>
+<p>ClearHealth provides:</p>
+<ul>
+<li>
+<p>A <strong>public searchable fee schedule</strong> (“Medicare + 20%” calculator).</p>
+</li>
+<li>
+<p>Or a <strong>QR code on the member’s card</strong> that opens their rate page:</p>
+<pre><code>clearhealth.io/rates/99213 → shows $114 for this region
+</code></pre>
+</li>
+</ul>
+<p>No negotiations, no mystery.
+It’s <em>the opposite of insurance networks</em> — simple, published, and instant.</p>
+<h2>⚙️ 4. What They Need (and Don’t Need)</h2>
+<table>
+<thead>
+<tr><th>Requirement</th><th>Traditional Insurer</th><th>ClearHealth</th></tr>
+</thead>
+<tbody>
+<tr><td>EDI 837 submission</td><td>Required</td><td>Optional</td></tr>
+<tr><td>Payer enrollment</td><td>Required</td><td>Not needed</td></tr>
+<tr><td>Pre-authorization</td><td>Common</td><td>Never (except rare inpatient)</td></tr>
+<tr><td>Waiting 30–90 days</td><td>Normal</td><td>1–2 days</td></tr>
+<tr><td>Special software</td><td>Yes</td><td>No — web portal or invoice upload</td></tr>
+<tr><td>Contract / credentialing</td><td>Mandatory</td><td>None</td></tr>
+<tr><td>Network negotiation</td><td>Always</td><td>Never</td></tr>
+</tbody>
+</table>
+<p>Your <strong>biggest differentiator</strong>:</p>
+<blockquote>
+<p>“If you can send an invoice, we can pay you — fast.”</p>
+</blockquote>
+<h2>💰 5. The Psychology for Providers</h2>
+<p>At launch, your goal is <strong>not</strong> to “convince them to take ClearHealth” — it’s to <strong>make it frictionless to accept cash</strong> while still giving the patient insurance protection.</p>
+<p>So you position it like this:</p>
+<blockquote>
+<p>“You don’t have to sign up for anything.
+Just treat ClearHealth members like cash-pay patients.
+We’ll handle the insurance part behind the scenes — and pay you faster than any carrier.”</p>
+</blockquote>
+<p>That’s <strong>music to their ears.</strong></p>
+<h2>🧩 6. How You Build Trust Quickly</h2>
+<ol>
+<li><strong>Pay fast.</strong> Nothing builds credibility like a 2-day ACH.</li>
+<li><strong>Be transparent.</strong> Always show them the rate table upfront.</li>
+<li><strong>Give them an easy portal.</strong> Simple login → see claims → download 1099.</li>
+<li><strong>Provide support humans.</strong> Real contact for billing staff (not an IVR maze).</li>
+<li><strong>Recognize good behavior.</strong> Prompt payment bonuses or “trusted provider” badges.</li>
+</ol>
+<h2>🧠 7. The Backend Workflow Supporting This</h2>
+<table>
+<thead>
+<tr><th>Step</th><th>Process</th><th>Automation</th></tr>
+</thead>
+<tbody>
+<tr><td>Claim submission</td><td>JSON, PDF, or EDI intake</td><td>API + OCR ingestion</td></tr>
+<tr><td>Validation</td><td>NPI, CPT, ICD checks</td><td>Automated rule engine</td></tr>
+<tr><td>Pricing</td><td>Medicare + multiplier lookup</td><td>SQL / Redis cache</td></tr>
+<tr><td>Deductible check</td><td>Real-time</td><td>FHIR Eligibility API</td></tr>
+<tr><td>Payment</td><td>HSA card or ACH</td><td>Stripe Treasury / Modern Treasury</td></tr>
+<tr><td>Confirmation</td><td>Provider + member notification</td><td>Email + dashboard update</td></tr>
+</tbody>
+</table>
+<h2>🚀 8. The Onboarding Playbook</h2>
+<table>
+<thead>
+<tr><th>Phase</th><th>Action</th><th>Outcome</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Month 1</strong></td><td>Build 100-provider pilot list (DPC + small clinics)</td><td>Early adopters</td></tr>
+<tr><td><strong>Month 2</strong></td><td>Offer instant-pay guarantee (“We pay in 48 hours”)</td><td>Hook</td></tr>
+<tr><td><strong>Month 3</strong></td><td>Launch provider referral program</td><td>Network growth</td></tr>
+<tr><td><strong>Month 4–6</strong></td><td>Offer optional API integrations for billing software</td><td>Scale</td></tr>
+</tbody>
+</table>
+<h3>✅ In short:</h3>
+<ul>
+<li>No credentialing, no portals if they don’t want them, no special setup.</li>
+<li>They can charge their normal cash rate or check your transparent fee table.</li>
+<li>They get paid fast, and you handle all the backend reconciliation automatically.</li>
+</ul>
+<p>Would you like me to write out an example <strong>“Provider Introduction Packet”</strong> — something you could actually hand or email to a small doctor’s office explaining how to accept ClearHealth patients and get paid?</p>
+
+</main>
+</body>
+</html>

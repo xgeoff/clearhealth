@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Claims Processing Redesign</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<main class="container prose">
+<p>Exactly right — <strong>claims</strong> are the single biggest friction point in the entire health insurance experience. They’re where trust breaks down, costs balloon, and member experience collapses.
+If you can redesign <em>this</em> piece, your plan becomes fundamentally better.</p>
+<p>Let’s break down how claims work today, why they’re so painful, and how <em>ClearHealth</em> could handle them differently.</p>
+<h2>🩺 1. How Claims Work Today (and Why It’s Terrible)</h2>
+<h3>The legacy workflow:</h3>
+<ol>
+<li><strong>Provider → Insurer:</strong> Doctor submits a claim (EDI 837 file) to the insurer.</li>
+<li><strong>Insurer → Adjudication Engine:</strong> Automated rules check the CPT codes, ICD codes, plan benefits, network contract, and medical necessity.</li>
+<li><strong>Provider → Payment:</strong> Insurer pays part, denies part, sends “Explanation of Benefits” (EOB).</li>
+<li><strong>Member → Confusion:</strong> Member gets multiple, inconsistent bills.</li>
+<li><strong>Appeals / Adjustments:</strong> Provider resubmits or negotiates — months later.</li>
+</ol>
+<p><strong>Problems:</strong></p>
+<ul>
+<li>The system assumes <em>fraud and error</em> by default → over-verification.</li>
+<li>Thousands of CPT modifiers and “bundled” billing rules.</li>
+<li>Network contracts and PBMs distort the true price.</li>
+<li>Members are billed before claims are settled.</li>
+<li>Providers have no idea what they’ll actually get paid.</li>
+</ul>
+<h2>🔧 2. ClearHealth’s Alternative: Simplified, Transparent Adjudication</h2>
+<h3>The key concept:</h3>
+<p><strong>Every claim should resolve instantly and transparently — like a credit card transaction.</strong></p>
+<p>To achieve that, you replace opaque EDI + claims adjudication logic with <strong>a transparent, rules-based engine</strong> and <strong>real-time pricing APIs</strong>.</p>
+<h3>🔹 Core Principles</h3>
+<table>
+<thead>
+<tr><th>Principle</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Reference Pricing</strong></td><td>Pay at a fixed multiple of Medicare (e.g., 120%). No network contracts.</td></tr>
+<tr><td><strong>No EOBs</strong></td><td>Members see what was billed, what’s covered, and what’s owed instantly.</td></tr>
+<tr><td><strong>Open APIs</strong></td><td>Use FHIR and JSON-based claims exchange, not EDI 837.</td></tr>
+<tr><td><strong>Real-time Adjudication</strong></td><td>Pre-price the claim at time of service.</td></tr>
+<tr><td><strong>Self-service Appeals</strong></td><td>Members can flag errors digitally; reviewed within 3 business days.</td></tr>
+<tr><td><strong>Fast Payments</strong></td><td>ACH payments to providers within 48 hours of claim submission.</td></tr>
+</tbody>
+</table>
+<h2>🧮 3. Example: The “Modern Claim” Lifecycle</h2>
+<pre><code>1. Member visits provider (cash pay or direct bill)
+2. Provider submits claim → ClearHealth API (FHIR Claim resource)
+3. API validates CPT code + ICD code + NPI + timestamp
+4. Pricing engine looks up Medicare rate → applies 1.2x multiplier
+5. Member sees instant cost breakdown:
+      Service: Office Visit (99213) - $115
+      Plan Responsibility: $0 (pre-deductible)
+      Member Owes: $115 (HSA-eligible)
+6. Payment processed automatically (from HSA or card-on-file)
+7. Provider receives ACH payment in 48 hours
+8. Claim recorded → deductible &amp; OOP balance updated
+</code></pre>
+<p>Result: <strong>No waiting, no mail, no surprises.</strong></p>
+<h2>⚙️ 4. Tech Architecture for Claims</h2>
+<table>
+<thead>
+<tr><th>Layer</th><th>Function</th><th>Tools / Standards</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Front-end Portal</strong></td><td>Members &amp; providers see real-time prices</td><td>React + FHIR API calls</td></tr>
+<tr><td><strong>Adjudication Engine</strong></td><td>Determines payment amounts</td><td>Micronaut service using rulesets (CPT → Medicare)</td></tr>
+<tr><td><strong>Reference Data Store</strong></td><td>CPT, DRG, ICD-10, NPI, and CMS Fee Schedules</td><td>PostgreSQL or Redis cache</td></tr>
+<tr><td><strong>Payment Processor</strong></td><td>HSA-linked debit, ACH, or Stripe Treasury</td><td>Stripe / Treasury Prime</td></tr>
+<tr><td><strong>Ledger + Audit</strong></td><td>Immutable transaction log for DOL compliance</td><td>Postgres + Cloudflare R2 backups</td></tr>
+<tr><td><strong>Analytics Layer</strong></td><td>Cost transparency + reporting</td><td>BigQuery / DuckDB + Metabase</td></tr>
+</tbody>
+</table>
+<h2>📜 5. Handling Providers Without EDI</h2>
+<p>Providers don’t need to use EDI if you:</p>
+<ul>
+<li>Provide a <strong>web dashboard</strong> for uploading invoices.</li>
+<li>Accept <strong>PDF or JSON claim forms</strong> → OCR or structured upload.</li>
+<li>Automatically generate CMS-1500 claim forms for compliance.</li>
+<li>Return <strong>instant adjudication + ACH payment</strong>.</li>
+</ul>
+<p>You can still maintain a legacy EDI gateway for compatibility (via Change Healthcare or Eligible.io), but it’s optional.</p>
+<h2>🧠 6. AI/LLM Role in Claims Simplification</h2>
+<p>AI can be leveraged responsibly in three areas:</p>
+<ol>
+<li><strong>Code Validation:</strong> Detect mismatched or redundant CPT/ICD codes.</li>
+<li><strong>Duplicate Detection:</strong> Spot repeated services for same member/date.</li>
+<li><strong>Language Simplification:</strong> Translate claim/EOB details into plain English for members.</li>
+</ol>
+<blockquote>
+<p>Example:
+“Your doctor billed $115 for a standard office visit. This counts toward your deductible. You owe $115, which can be paid from your HSA.”</p>
+</blockquote>
+<h2>💵 7. Claims Transparency = Cost Control</h2>
+<p>A transparent, reference-based system means:</p>
+<ul>
+<li>Providers bill what’s reasonable (since they know the reference rate).</li>
+<li>Members see the true cost → behavioral pressure to choose value.</li>
+<li>No need for prior authorizations for most outpatient services.</li>
+<li>Drastically reduced administrative overhead (~50% less than legacy insurers).</li>
+</ul>
+<h2>🧩 8. Third-Party Integrations You Could Use</h2>
+<table>
+<thead>
+<tr><th>Function</th><th>Vendor</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Claims intake API</strong></td><td>Eligible.io, PokitDok (legacy), or Noyo</td></tr>
+<tr><td><strong>CMS rate data</strong></td><td>Redbook, CMS API, Fair Health, OpenMRS</td></tr>
+<tr><td><strong>Payment orchestration</strong></td><td>Unit Finance, Modern Treasury, or Stripe Treasury</td></tr>
+<tr><td><strong>FHIR schema</strong></td><td>Google Cloud Healthcare API, Firely Server, HAPI FHIR</td></tr>
+<tr><td><strong>Automation / Rules</strong></td><td>Camunda, Drools, or custom Kotlin DSL in Micronaut</td></tr>
+</tbody>
+</table>
+<h2>🧭 9. The Business Win</h2>
+<p>If traditional insurers spend 15–20% of premium on admin and claims processing (the “medical loss ratio” admin load), you can do it for 4–6% — while delivering faster payments and total price transparency.</p>
+<p>That difference alone is your margin advantage.</p>
+<p>Would you like me to <strong>sketch the actual architecture diagram</strong> for ClearHealth’s claims engine — showing API flow, pricing lookup, and payment integration (FHIR-based, Micronaut-powered)?</p>
+
+</main>
+</body>
+</html>

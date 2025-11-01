@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Concept: Bare-Bones HSA-Compatible Health Plan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<main class="container prose">
+<p>Perfect — you’re describing what could actually be a <strong>next-generation HSA-compatible, transparent-pricing plan</strong> — something that stays within U.S. regulatory frameworks (so it’s viable) but strips away the cruft that makes normal insurance miserable. Let’s build this step by step.</p>
+<h2>🏗️ Concept Overview: “Bare-Bones HSA-Compatible Plan”</h2>
+<p>Let’s call this prototype <strong>ClearHealth Basic</strong>.</p>
+<p><strong>Goal:</strong>
+A fully HSA-eligible, minimal-overhead, direct-pay plan that wraps catastrophic protection around transparent pricing (including prescriptions via Cost Plus Drugs).</p>
+<h2>🧮 Step 1: Regulatory Foundation — HSA Compatibility</h2>
+<p>To qualify as HSA-eligible under IRS rules, your plan must be a <strong>High Deductible Health Plan (HDHP)</strong> that meets all of these:</p>
+<table>
+<thead>
+<tr><th>Rule</th><th>2025 Requirement (IRS)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Minimum Deductible (Self-Only)</strong></td><td>$1,650</td></tr>
+<tr><td><strong>Minimum Deductible (Family)</strong></td><td>$3,300</td></tr>
+<tr><td><strong>Maximum Out-of-Pocket (Self-Only)</strong></td><td>$8,300</td></tr>
+<tr><td><strong>Maximum Out-of-Pocket (Family)</strong></td><td>$16,600</td></tr>
+<tr><td><strong>No first-dollar coverage</strong></td><td>Except for preventive care (per IRS Notice 2004-23 &amp; 2004-50)</td></tr>
+</tbody>
+</table>
+<p>So your plan:</p>
+<ul>
+<li>Covers <strong>preventive care at 100%</strong> (annual physicals, vaccines, screenings).</li>
+<li>Everything else (primary care, urgent care, prescriptions, imaging, etc.) is <strong>cash-price until the deductible is met</strong>.</li>
+<li>Once deductible is met → <strong>100% coverage</strong> or <strong>80/20 coinsurance</strong> up to OOP max.</li>
+</ul>
+<h2>💊 Step 2: Prescriptions — Cost Plus Integration</h2>
+<p><strong>Cost Plus Drugs (Mark Cuban’s company):</strong></p>
+<ul>
+<li>Sells generic medications at <strong>cost + 15% + $3 pharmacy fee + $5 shipping.</strong></li>
+<li>No PBM middlemen, no formularies.</li>
+</ul>
+<h3>Integration options:</h3>
+<ol>
+<li><strong>Direct link:</strong> Route all prescription fills to CostPlusDrugs.com — either paid directly by the member (pre-deductible) or reimbursed after deductible.</li>
+<li><strong>API partnership:</strong> Pull real-time price data via Cost Plus’ APIs → show users exact out-of-pocket prices in your app.</li>
+<li><strong>Optional concierge layer:</strong> let members prepay meds via the plan wallet (HSA-linked debit).</li>
+</ol>
+<p><strong>Result:</strong></p>
+<ul>
+<li>No opaque PBM pricing.</li>
+<li>HSA-eligible because all spending pre-deductible is member-paid.</li>
+</ul>
+<h2>🏥 Step 3: Provider &amp; Network Model</h2>
+<p>Go <strong>network-agnostic</strong>:</p>
+<ul>
+<li>Let members use any licensed provider.</li>
+<li>Reimburse at a <strong>reference rate</strong> (e.g., 120% of Medicare).</li>
+<li>Encourage use of <strong>direct primary care</strong> or <strong>telehealth</strong> with transparent cash pricing.</li>
+</ul>
+<h3>Example:</h3>
+<ul>
+<li>Member sees Dr. Smith, who charges $120.</li>
+<li>Medicare rate = $100 → plan reimburses $120 once deductible met.</li>
+<li>Before deductible, member pays directly, ideally through HSA.</li>
+</ul>
+<p>You can partner with vendors like:</p>
+<ul>
+<li><strong>Sesame Care</strong> or <strong>MDsave</strong> for cash-priced care.</li>
+<li><strong>Telehealth APIs</strong> (Wheel, Teladoc, SteadyMD, etc.) for virtual visits.</li>
+</ul>
+<h2>📱 Step 4: Member Experience Layer</h2>
+<p>A simple web + mobile portal:</p>
+<ul>
+<li>Tracks deductible + HSA balance.</li>
+<li>Integrates with Cost Plus and DPC/telehealth APIs.</li>
+<li>Displays transparent procedure pricing.</li>
+<li>Offers digital receipts for HSA reimbursement.</li>
+</ul>
+<p><strong>Core tech stack:</strong></p>
+<ul>
+<li>Micronaut backend with FHIR interface.</li>
+<li>PostgreSQL (claims + transactions).</li>
+<li>Cloudflare Workers / API Gateway for routing.</li>
+<li>React or Flutter for app.</li>
+</ul>
+<h2>💰 Step 5: Example Plan Structure</h2>
+<table>
+<thead>
+<tr><th>Feature</th><th>Self-Only</th><th>Family</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Deductible</strong></td><td>$2,000</td><td>$4,000</td></tr>
+<tr><td><strong>Coinsurance (after deductible)</strong></td><td>0% (100% coverage)</td><td>0%</td></tr>
+<tr><td><strong>OOP Max</strong></td><td>$8,000</td><td>$16,000</td></tr>
+<tr><td><strong>Preventive care</strong></td><td>Covered 100%</td><td>Covered 100%</td></tr>
+<tr><td><strong>Rx (via Cost Plus)</strong></td><td>Member pays actual Cost Plus price</td><td>same</td></tr>
+<tr><td><strong>Telehealth visit</strong></td><td>$40 flat (applied to deductible)</td><td>same</td></tr>
+<tr><td><strong>Any doctor</strong></td><td>Yes, reimbursed 120% of Medicare</td><td>same</td></tr>
+<tr><td><strong>HSA compatible</strong></td><td>✅</td><td>✅</td></tr>
+</tbody>
+</table>
+<h2>🧩 Step 6: Launch Strategy</h2>
+<p>Start as a <strong>self-funded plan administrator</strong> or <strong>MGA (managing general agent)</strong>:</p>
+<ol>
+<li>Partner with a stop-loss reinsurer for catastrophic claims.</li>
+<li>Build out the PAS + HSA integration.</li>
+<li>Offer to small employers, freelancers, and LLCs tired of opaque plans.</li>
+<li>Position as “<strong>Health insurance that plays nice with your HSA — and nothing else.</strong>”</li>
+</ol>
+<h2>✳️ Add-Ons (Optional)</h2>
+<ul>
+<li><strong>Direct Primary Care (DPC)</strong> membership subsidy.</li>
+<li><strong>Wellness Rebate:</strong> HSA bonus contribution for preventive screening.</li>
+<li><strong>Transparent Imaging Add-on:</strong> pre-negotiated MRI/CT centers at fixed prices.</li>
+</ul>
+<p>Would you like me to take this to the <strong>next step</strong> by:</p>
+<ol>
+<li>Drafting a <strong>plan document outline</strong> (the legal + regulatory template)?</li>
+<li>Designing a <strong>tech architecture</strong> for the PAS + HSA integration?</li>
+<li>Modeling <strong>financial viability</strong> (premiums vs. expected claims + stop-loss)?</li>
+</ol>
+<p>Which direction do you want to go next?</p>
+
+</main>
+</body>
+</html>

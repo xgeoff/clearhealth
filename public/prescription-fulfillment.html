@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>ClearScript: Prescription Fulfillment Workflow</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+<main class="container prose">
+<p>Perfect — here’s a <strong>member-to-medication workflow</strong> that shows how your plan could integrate <strong>Cost Plus Drugs</strong> as the default channel and your own <strong>discount fallback</strong> for uncovered meds.</p>
+<h2>💊 Prescription Fulfillment Flow</h2>
+<h3><strong>1. Prescription Issued</strong></h3>
+<ul>
+<li>Member visits a doctor or telehealth provider.</li>
+<li>The prescription is sent electronically (e-prescribed) or printed.</li>
+<li>Doctor uses standard e-prescribing software (e.g., Surescripts), no special setup required.</li>
+</ul>
+<h3><strong>2. Member Portal / App Lookup</strong></h3>
+<ul>
+<li>
+<p>The member logs into your plan’s portal or app, which connects to:</p>
+<ul>
+<li><strong>Cost Plus API or catalog</strong> for transparent pricing.</li>
+<li><strong>Your discount-card database</strong> (or partner PBM-lite system) for alternate prices.</li>
+</ul>
+</li>
+<li>
+<p>The system shows two sections:</p>
+<ul>
+<li>✅ <em>“Buy from Cost Plus”</em> — price, shipping, estimated delivery.</li>
+<li>💳 <em>“Use Local Discount Pharmacy”</em> — participating locations and price using your card.</li>
+</ul>
+</li>
+</ul>
+<h3><strong>3. Decision Point</strong></h3>
+<table>
+<thead>
+<tr><th>Scenario</th><th>Action</th><th>Payment</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Drug available on Cost Plus</strong></td><td>Member orders directly online</td><td>Member pays full Cost Plus price out of pocket (eligible for HSA reimbursement)</td><td>Order ships to home; no claim submission needed beyond record capture.</td></tr>
+<tr><td><strong>Drug <em>not</em> available on Cost Plus</strong></td><td>Member selects local discount option</td><td>Member shows the plan’s discount card at a participating pharmacy</td><td>The pharmacy charges the pre-negotiated discounted cash price.</td></tr>
+<tr><td><strong>Emergency or urgent fill</strong></td><td>Member uses local pharmacy immediately</td><td>Discount card accepted</td><td>Optional: plan can reimburse cost gap after claim upload.</td></tr>
+</tbody>
+</table>
+<h3><strong>4. Claim Capture (Optional but Valuable)</strong></h3>
+<ul>
+<li>
+<p>Even though these are “cash” transactions, the member portal records:</p>
+<ul>
+<li>NDC (drug identifier)</li>
+<li>Amount paid</li>
+<li>Quantity</li>
+<li>Source (Cost Plus or Discount Network)</li>
+</ul>
+</li>
+<li>
+<p>This data populates your <strong>claims ledger</strong> for:</p>
+<ul>
+<li>Year-end reporting (for HSA use)</li>
+<li>Future actuarial and utilization analytics</li>
+<li>Potential reinsurance claim triggers</li>
+</ul>
+</li>
+</ul>
+<h3><strong>5. Catastrophic Protection</strong></h3>
+<ul>
+<li>If a member’s total annual medication spend exceeds your catastrophic threshold (say &gt;$5 000), your <strong>catastrophic coverage</strong> or <strong>stop-loss policy</strong> kicks in.</li>
+<li>The plan reimburses all further medication costs that year.</li>
+<li>Reinsurance can backstop this layer for predictability.</li>
+</ul>
+<h2>⚙️ System Architecture Overview</h2>
+<p><strong>Front end:</strong> member portal or app
+<strong>Back end:</strong></p>
+<ul>
+<li>Cost Plus Drugs API integration</li>
+<li>Discount-network price feed (GoodRx API or your own database)</li>
+<li>Simple “claims-light” ledger (JSON or FHIR format) for recordkeeping</li>
+<li>Rules engine to trigger catastrophic reimbursements and reinsurance events</li>
+</ul>
+<h2>🪙 Example Member Experience</h2>
+<blockquote>
+<p><em>“You have a prescription for Atorvastatin 20 mg.”</em>
+– Cost Plus price: $3.60 + $5 shipping
+– Local price (with ReachRx card): $6.25 at CVS on Main St.</p>
+<p><strong>Choose delivery or pickup.</strong></p>
+<p>→ Member chooses Cost Plus.
+→ Order ships; record automatically logged to HSA ledger.</p>
+<p>Next time the drug isn’t in Cost Plus:
+→ Portal shows “Use ReachRx discount” instructions and digital card barcode.</p>
+</blockquote>
+<p>If you’d like, I can mock up the <strong>data model</strong> and <strong>API flow diagram</strong> (showing Cost Plus lookup → discount fallback → ledger record → catastrophic trigger).
+Would you like that next?</p>
+
+</main>
+</body>
+</html>
