@@ -57,6 +57,11 @@
         .nav a{ margin-left:18px; font-weight:600; color:#222; }
         .nav .cta{ background: var(--brand); color:white; padding:10px 14px; border-radius:12px; box-shadow: 0 6px 16px rgba(79,70,229,0.35); }
         .nav .cta:hover{ text-decoration:none; filter: brightness(1.05); }
+        .nav {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;   /* lets items wrap on small screens */
+        }
 
         /* Hero */
         .hero{ position:relative; max-width:1100px; margin: 0 auto; padding: 72px 24px 48px; text-align:center; }
@@ -117,7 +122,16 @@
           .grid-3, .steps { grid-template-columns: 1fr; }
           .stats { grid-template-columns: 1fr; }
           .link-shelf{ grid-template-columns: 1fr; }
+          .nav a {
+            margin-left: 10px;
+            font-size: 0.9rem;  /* match the template */
+          }
+          .nav .cta {
+            padding: 8px 12px;  /* smaller button on phones */
+            border-radius: 10px;
+          }
         }
+
     </style>
 </head>
 <body>
