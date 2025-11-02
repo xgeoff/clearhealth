@@ -1,8 +1,8 @@
 ---
 title = "Launch Blueprint for ClearHealth Basic"
 ---
-Excellent — here’s how your **Phase 1 launch blueprint** for *ClearHealth Basic* would look: a clear entity setup, operational flow, and early-year financial model.
 
+**Phase 1 launch blueprint** for *ClearHealth Basic* would look: a clear entity setup, operational flow, and early-year financial model.
 
 
 ## 🏗️ 1. Entity & Structural Setup
@@ -132,6 +132,3 @@ Year-end surplus → retained or rebated to members
 6. **File ERISA documents + bond** (with DOL).
 7. **Collect 3–6 months claims data** → use for captive application.
 
-
-
-Would you like me to build a **financial projection spreadsheet template** (with adjustable inputs for members, premiums, and stop-loss pricing) so you can model multiple scenarios — pilot, growth, and captive phases?

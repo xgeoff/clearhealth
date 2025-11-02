@@ -1,11 +1,6 @@
 ---
 title = "ClearHealthRx Discount Program Setup"
 ---
-Excellent name — **ClearHealthRx** fits perfectly with your ClearHealth concept: simple, transparent, patient-first.
-
-Now to your question:
-No, **discount programs like ClearHealthRx are not hard to set up**, especially if you start with the right type of partner. The heavy lift (network contracts, pharmacy integrations, and BIN/IIN registration) is handled by a **pharmacy benefit network provider**—you’re basically layering your brand, rules, and pricing model on top.
-
 
 
 ## ⚙️ How Discount Cards Actually Work
@@ -61,7 +56,4 @@ So for ClearHealthRx, you need:
 * ClearHealthRx becomes your **fallback cash network** for everything else.
 * Both are HSA-compatible and transparent — no hidden rebates, no spread pricing.
 
-
-If you want, I can outline a **practical vendor shortlist** (with rough setup fees, margin models, and pros/cons) for white-label discount programs like this — focused on aligning with your transparent-pricing mission.
-
-Would you like me to put that together?
+* You can **cross-promote**: members using Cost Plus get a ClearHealthRx card for non-Cost Plus meds.

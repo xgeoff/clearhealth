@@ -1,9 +1,7 @@
 ---
 title = "ClearHealth: Mission and Goals"
 ---
-
-Here’s a clear, plain-language version you can use in a pitch deck, website, or one-page summary — three concise descriptions that communicate **what ClearHealth is**, **why it exists**, and **what it’s trying to accomplish.**
-
+**ClearHealth's mission and goals** center on transforming health insurance into a transparent, efficient, and user-friendly experience for both patients and providers.
 
 
 ### **1. Our Mission**
@@ -32,6 +30,8 @@ To build a sustainable, technology-driven alternative to traditional insurance �
 
 In short: **ClearHealth aims to be the health plan that doesn’t suck — simple, honest coverage for modern healthcare.**
 
-
-
-Would you like a short **investor-ready slide version** (with bullet-point metrics, TAM/SAM/SOM framing, and a one-sentence elevator pitch)?
+### **4. Our Vision for the Future**
+We envision a future where health insurance is no longer a barrier to care, but a seamless part of the healthcare experience.
+By leveraging technology, transparent pricing, and patient empowerment, we aim to create a system where everyone
+can access quality care without the stress and confusion of traditional insurance.
+Through continuous innovation and a commitment to our core values, ClearHealth strives to lead the way toward a more equitable and efficient healthcare system for all.

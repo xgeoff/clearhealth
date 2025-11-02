@@ -2,12 +2,6 @@
 title = "Claims Processing Redesign"
 
 ---
-Exactly right — **claims** are the single biggest friction point in the entire health insurance experience. They’re where trust breaks down, costs balloon, and member experience collapses.
-If you can redesign *this* piece, your plan becomes fundamentally better.
-
-Let’s break down how claims work today, why they’re so painful, and how *ClearHealth* could handle them differently.
-
-
 
 ## 🩺 1. How Claims Work Today (and Why It’s Terrible)
 
@@ -131,5 +125,4 @@ If traditional insurers spend 15–20% of premium on admin and claims processing
 
 That difference alone is your margin advantage.
 
-
-Would you like me to **sketch the actual architecture diagram** for ClearHealth’s claims engine — showing API flow, pricing lookup, and payment integration (FHIR-based, Micronaut-powered)?
+By redesigning claims processing around transparency, real-time pricing, and simple APIs, ClearHealth can create a health plan that truly reimagines healthcare — for members and providers alike.

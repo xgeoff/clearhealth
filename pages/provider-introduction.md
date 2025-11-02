@@ -1,9 +1,8 @@
 ---
 title = "ClearHealth Provider Introduction Packet"
 ---
-Here’s a **Provider Introduction Packet (v1)** — written in a tone that small clinics and independent doctors will trust and actually *read.*
-It’s professional, plain-English, and designed to make ClearHealth sound refreshingly easy to work with.
 
+**Provider Introduction Packet (v1)** 
 
 
 # 🩺 **Welcome to ClearHealth**
@@ -146,6 +145,3 @@ That’s it.
 *Transparent. HSA-friendly. Fast-paying.*
 📍 Seattle, WA 🌐 [clearhealth.io](https://clearhealth.io)
 
-
-
-Would you like me to expand this into a **two-page printable PDF** version (with a clean logo header, rate example table, and provider FAQ sidebar), or a **digital email kit** (templated HTML for clinics and front-desk staff)?

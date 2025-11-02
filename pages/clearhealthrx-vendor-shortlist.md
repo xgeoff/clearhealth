@@ -1,9 +1,6 @@
 ---
 title = "ClearHealthRx Vendor Shortlist"
 ---
-Perfect. Here’s a curated **vendor shortlist** for building **ClearHealthRx**, your transparent discount card to complement Cost Plus Drugs — designed specifically for a *startup-level, regulatory-compliant, low-overhead launch*.
-
-
 
 ## 🧾 CLEARHEALTHRX DISCOUNT NETWORK OPTIONS
 
@@ -58,12 +55,3 @@ Perfect. Here’s a curated **vendor shortlist** for building **ClearHealthRx**,
 Add a QR code linking to a drug price lookup page (integrating Cost Plus + ClearHealthRx prices).
 
 
-
-If you’d like, I can draft the **ClearHealthRx architecture map** next — showing the integration between:
-
-* Cost Plus
-* ClearHealthRx network
-* Your member portal (price lookup, order routing, ledger logging)
-* Catastrophic/reinsurance triggers
-
-Would you like that diagram and workflow next?

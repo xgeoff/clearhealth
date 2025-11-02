@@ -1,8 +1,6 @@
 ---
 title = "Concept: Bare-Bones HSA-Compatible Health Plan"
 ---
-Perfect — you’re describing what could actually be a **next-generation HSA-compatible, transparent-pricing plan** — something that stays within U.S. regulatory frameworks (so it’s viable) but strips away the cruft that makes normal insurance miserable. Let’s build this step by step.
-
 
 
 ## 🏗️ Concept Overview: “Bare-Bones HSA-Compatible Plan”
@@ -125,11 +123,3 @@ Start as a **self-funded plan administrator** or **MGA (managing general agent)*
 * **Transparent Imaging Add-on:** pre-negotiated MRI/CT centers at fixed prices.
 
 
-
-Would you like me to take this to the **next step** by:
-
-1. Drafting a **plan document outline** (the legal + regulatory template)?
-2. Designing a **tech architecture** for the PAS + HSA integration?
-3. Modeling **financial viability** (premiums vs. expected claims + stop-loss)?
-
-Which direction do you want to go next?

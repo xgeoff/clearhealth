@@ -1,11 +1,8 @@
 ---
 title = "Clean Prescription Strategy: Cost Plus + Discount Program"
 ---
-Yes — and that’s exactly the right instinct. You can absolutely create a **discount program** to handle medications that aren’t available through Cost Plus.
-
-Here’s how that could work in practice:
-
-
+A **prescription drug strategy** that leverages **Cost Plus Drugs** as the primary fulfillment channel, supplemented by a **discount card program** for uncovered medications.
+## 💊 Prescription Strategy Overview
 
 ### 🧩 1. Default Flow (Cost Plus)
 
@@ -53,8 +50,3 @@ By combining Cost Plus + a transparent fallback:
 * You **maintain transparency** — members always see what each option costs.
 * You can **learn** from real-world purchasing data which drugs matter most, and potentially **negotiate Cost Plus to add them**.
 
-
-
-If you want, I can outline a specific **workflow** (member → prescription → lookup → purchase → claim record) that would show how your plan handles Cost Plus vs. fallback drugs end-to-end.
-
-Would you like me to draft that flow next?

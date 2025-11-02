@@ -1,9 +1,7 @@
 ---
 title = "Core Idea: Catastrophic Protection & Reinsurance"
 ---
-Excellent — this is one of the most important (and misunderstood) parts of building a health plan that’s lean, transparent, and HSA-compatible. Let’s unpack **catastrophic protection** and **reinsurance** step by step, so you can see exactly how they work and how you’d structure them for something like *ClearHealth Basic*.
-
-
+# Core Idea: Catastrophic Protection & Reinsurance
 
 ## 🧱 1. The Core Idea
 
@@ -160,9 +158,3 @@ Member → HSA / Direct Pay → Provider
 ```
 
 
-If you’d like, I can now build you:
-
-1. a **financial model** showing how claims + reinsurance premiums would affect pricing (PMPM, margins, break-even), or
-2. a **technical workflow diagram** showing the claims → stop-loss → reimbursement data flow.
-
-Which would you like next?

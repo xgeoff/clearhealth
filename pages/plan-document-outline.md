@@ -1,7 +1,8 @@
 ---
 title = "ClearHealth Basic HDHP Plan Document Outline"
 ---
-Excellent — let’s design a **plan document outline** for your HSA-compatible, bare-bones health plan that integrates transparent pricing and Cost Plus Drugs.
+
+**Plan document outline** for an HSA-compatible, bare-bones health plan that integrates transparent pricing and Cost Plus Drugs.
 
 What follows is a **regulatory-compliant structure** — something that could evolve into an actual *Summary Plan Description (SPD)* and *Evidence of Coverage (EOC)* if you partnered with a licensed carrier or self-funded employer group.
 
@@ -168,9 +169,3 @@ For self-funded employers or individual aggregators:
 **Customer Service:** 1-800-XXX-XXXX | [support@clearhealth.io](mailto:support@clearhealth.io)
 **Appeals:** [appeals@clearhealth.io](mailto:appeals@clearhealth.io)
 
-
-
-Would you like me to produce next:
-
-* 🧩 **(A)** A complete legal template version of this outline as a Markdown or DOCX (EOC draft), or
-* ⚙️ **(B)** A system architecture document showing how the claims engine and Cost Plus integration would work technically?

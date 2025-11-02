@@ -2,10 +2,6 @@
 title = "Concierge Medicine Integration with ClearHealth"
 ---
 
-Yes — in fact, **ClearHealth and concierge medicine fit together almost perfectly**, as long as the plan is structured thoughtfully. Concierge or “direct primary care” (DPC) physicians already align with your model’s values: transparency, simplicity, and no insurance middlemen.
-
-Here’s how it would work, what to watch out for legally, and how you could make it a key differentiator.
-
 
 ## 🩺 1. Why Concierge / DPC Works So Well with ClearHealth
 
@@ -84,7 +80,3 @@ You could pitch it as:
 | **ClearHealth + DPC**     | HDHP + direct primary care partner | $450          |
 | **ClearHealth Concierge** | HDHP + premium concierge network   | $600–700      |
 
-You could easily market this as **“modern coverage for people who actually value their doctor.”**
-
-
-Would you like me to show how this could be **structured contractually and marketed** — e.g., what the agreements look like between ClearHealth, a concierge practice, and the member (and how to keep it HSA-compliant)?

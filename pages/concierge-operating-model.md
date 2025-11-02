@@ -1,9 +1,11 @@
 ---
 title = "Concierge & DPC Operating Model"
 ---
-Here’s how you could **legally and operationally structure** ClearHealth’s partnership with concierge or direct primary care (DPC) physicians — while preserving **HSA compatibility**, simplifying operations, and making it investor-credible.
+# Concierge & DPC Operating Model with ClearHealth
+Combining a **Direct Primary Care (DPC)** or **Concierge Medicine** practice with your **ClearHealth High Deductible Health Plan (HDHP)** can create a powerful, patient-centered healthcare experience.
+It aligns incentives for preventive care while providing comprehensive coverage for major medical events.
 
-We’ll go step by step:
+Step by step **legally and operationally structure**:
 1️⃣ legal/regulatory model,
 2️⃣ contract relationships,
 3️⃣ money flow,
@@ -162,7 +164,3 @@ These platforms already handle billing, scheduling, and contracts — meaning in
 | Grow distribution        | Partner with DPC networks as strategic channel                           |
 | Deliver unique value     | Full coverage with trust and transparency at every layer                 |
 
-
-
-Would you like me to draft the **actual three-contract bundle** (Member Agreement, DPC Service Agreement, and Provider Affiliation Agreement) in full — ready for review by legal counsel and investors?
-I can structure them as simple Markdown or DOCX templates, suitable for your startup’s legal folder.

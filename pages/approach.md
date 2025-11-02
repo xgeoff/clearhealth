@@ -2,10 +2,7 @@
 title = "Approach to Designing a Better Health Insurance Plan"
 ---
 
-Perfect — that’s a mission statement I can get behind. Let’s start by breaking this into layers so we can design something that’s both **radically better for members** and **operationally viable**.
-
-
-## 🩺 Step 1: Define What “Doesn’t Suck” Means
+## 🩺 Step 1: Define What “Healthcare Reimagined” Means
 
 Here’s what most people hate about health insurance:
 
@@ -74,10 +71,3 @@ You could pair:
 * Offer simple tiers: *Preventive*, *Everyday*, *Catastrophic*, modular add-ons.
 
 
-Would you like me to:
-
-1. Sketch the **plan structure** (tiers, deductibles, copays, incentives)?
-2. Design the **system architecture** (APIs, claims workflow, FHIR schema)?
-3. Outline the **business model and regulatory path** (e.g., self-funded vs. licensed insurer)?
-
-Which direction do you want to go first?

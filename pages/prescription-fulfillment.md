@@ -1,8 +1,8 @@
 ---
 title = "ClearScript: Prescription Fulfillment Workflow"
 ---
-Perfect — here’s a **member-to-medication workflow** that shows how your plan could integrate **Cost Plus Drugs** as the default channel and your own **discount fallback** for uncovered meds.
 
+A **member-to-medication workflow** that shows how your plan could integrate **Cost Plus Drugs** as the default channel and your own **discount fallback** for uncovered meds.
 
 
 ## 💊 Prescription Fulfillment Flow
@@ -86,6 +86,3 @@ Perfect — here’s a **member-to-medication workflow** that shows how your pla
 > Next time the drug isn’t in Cost Plus:
 > → Portal shows “Use ReachRx discount” instructions and digital card barcode.
 
-
-If you’d like, I can mock up the **data model** and **API flow diagram** (showing Cost Plus lookup → discount fallback → ledger record → catastrophic trigger).
-Would you like that next?

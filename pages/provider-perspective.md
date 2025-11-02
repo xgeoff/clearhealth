@@ -1,11 +1,8 @@
 ---
 title = "ClearHealth from the Provider's Perspective"
 ---
-Fantastic and absolutely the *right* question — this is the exact point where most new health plans fail:
-they design for members but not for **the front desk at the doctor’s office**.
 
-Let’s walk through what it looks like **from the provider’s perspective**, step by step, and how to make sure you’re *easier to deal with than any traditional insurer* — not more work.
-
+**From the provider’s perspective**, step by step, here’s how accepting ClearHealth patients works — and why it’s so easy.
 
 
 ## 🏥 1. Setting the Scene: The Small Clinic Reality
@@ -184,6 +181,3 @@ That’s **music to their ears.**
 * They can charge their normal cash rate or check your transparent fee table.
 * They get paid fast, and you handle all the backend reconciliation automatically.
 
-
-
-Would you like me to write out an example **“Provider Introduction Packet”** — something you could actually hand or email to a small doctor’s office explaining how to accept ClearHealth patients and get paid?
