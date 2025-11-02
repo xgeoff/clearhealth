@@ -80,9 +80,21 @@
           margin-bottom: 16px;
         }
 
-        p, li {
+        p {
           line-height: 1.6;
           color: var(--muted);
+        }
+
+        ul, ol {
+          text-align: left;
+          margin: 20px auto;
+          max-width: 600px;
+          color: var(--muted);
+          line-height: 1.6;
+        }
+
+        li {
+          margin-bottom: 8px;
         }
 
         table {
@@ -123,6 +135,7 @@
         @media (max-width: 600px) {
           main { margin: 40px auto; }
           nav a { margin-left: 10px; font-size: 0.9rem; }
+          ul, ol { max-width: 100%; padding-left: 20px; }
         }
     </style>
 </head>
@@ -137,7 +150,7 @@
         </nav>
     </div>
 </header>
-<body>
+<body></body>
 <main>
     <p>Excellent — let’s design a <strong>plan document outline</strong> for your HSA-compatible, bare-bones health plan that integrates transparent pricing and Cost Plus Drugs.</p>
 <p>What follows is a <strong>regulatory-compliant structure</strong> — something that could evolve into an actual <em>Summary Plan Description (SPD)</em> and <em>Evidence of Coverage (EOC)</em> if you partnered with a licensed carrier or self-funded employer group.</p>
