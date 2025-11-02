@@ -1,56 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>ClearHealth</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClearHealth — Healthcare, Reimagined</title>
+    <meta name="description" content="Simple, transparent coverage with cash-first pricing and Medicare+20% caps. No surprises. Just care." />
 
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Skeleton (optional – keeps your grid/utilities) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqw8J9f8dXv8c3nGZfFZ9nN9G5r6S6zC3A5xJX2mO3m8J5i9n7r1r1e2P0U2vE3k0zR3y8k0Q0j0h3q8Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <style>
+        :root{
+          --bg: #0f1221;
+          --ink: #12131a;
+          --text: #0f1120;
+          --muted: #6b7280;
+          --brand: #00b4d8; /* Bright aqua */
+          --brand-2: #90e0ef;    /* Sky blue */
+          --brand-3: #8bc34a;     /* peaceful green */
+          --surface: rgba(255,255,255,0.06);
+          --card: #ffffff;
+          --ink-2: #1f2937;
+          --ok: #10b981;
+          --warn: #f59e0b;
+          --danger: #ef4444;
+        }
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
+        /* Global reset tweaks */
+        html, body { height: 100%; }
+        body{
+          font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+          color: #0b0d18;
+          background: radial-gradient(1200px 800px at 10% -10%, rgba(79,70,229,0.25), transparent 60%),
+                      radial-gradient(1000px 600px at 90% 10%, rgba(34,211,238,0.22), transparent 55%),
+                      linear-gradient(180deg, #fbfbff 0%, #f6f8ff 100%);
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
 
-    <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+        a{ color: var(--brand); text-decoration: none; }
+        a:hover{ text-decoration: underline; }
 
+        /* Header / Nav */
+        .site-header{
+          position: sticky; top:0; z-index: 10;
+          backdrop-filter: blur(8px);
+          background: rgba(255,255,255,0.75);
+          border-bottom: 1px solid rgba(15, 17, 32, 0.06);
+        }
+        .nav-wrap{ display:flex; align-items:center; justify-content:space-between; padding: 18px 24px; max-width: 1100px; margin: 0 auto; }
+        .brand{ display:flex; gap:10px; align-items:center; font-weight:700; letter-spacing:0.2px; }
+        .brand-mark{ width:28px; height:28px; border-radius:10px; background: conic-gradient(from 220deg, var(--brand), var(--brand-2), var(--brand-3), var(--brand)); box-shadow: 0 6px 20px rgba(79,70,229,0.35); }
+        .brand span{ font-family: Raleway, Inter, sans-serif; font-weight:700; }
+        .nav a{ margin-left:18px; font-weight:600; color:#222; }
+        .nav .cta{ background: var(--brand); color:white; padding:10px 14px; border-radius:12px; box-shadow: 0 6px 16px rgba(79,70,229,0.35); }
+        .nav .cta:hover{ text-decoration:none; filter: brightness(1.05); }
+
+        /* Hero */
+        .hero{ position:relative; max-width:1100px; margin: 0 auto; padding: 72px 24px 48px; text-align:center; }
+        .hero h1{ font-family: Raleway, Inter, sans-serif; font-size: clamp(2rem, 4.5vw, 3.25rem); line-height:1.1; margin-bottom: 14px; }
+        .hero h1 .accent{ background: linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .hero p{ color:#384152; font-size: clamp(1rem, 2.2vw, 1.2rem); max-width: 760px; margin: 0 auto 28px; }
+        .hero-cta{ display:flex; gap:12px; align-items:center; justify-content:center; flex-wrap:wrap; }
+        .button{ display:inline-block; padding:12px 18px; border-radius:14px; font-weight:700; border:1px solid rgba(15,17,32,0.1); }
+        .button.primary{ background: linear-gradient(90deg, var(--brand), var(--brand-2)); color:#fff; border:none; box-shadow: 0 10px 24px rgba(79,70,229,0.25); }
+        .button.ghost{ background:#fff; color:#111; }
+
+        /* Glass stats */
+        .stats{
+          display:grid; grid-template-columns: repeat(3,1fr); gap:16px; margin: 36px auto 4px; max-width: 900px;
+        }
+        .stat{
+          background: rgba(255,255,255,0.55);
+          backdrop-filter: blur(6px);
+          border: 1px solid rgba(15,17,32,0.08);
+          border-radius: 16px; padding: 18px 16px;
+        }
+        .stat strong{ font-size: 1.35rem; display:block; }
+        .stat span{ color: var(--muted); font-size: 0.95rem; }
+
+        /* Value props */
+        .section{ max-width: 1100px; margin: 72px auto; padding: 0 24px; }
+        .section h2{ font-family: Raleway, Inter, sans-serif; font-size: clamp(1.6rem, 3vw, 2.05rem); margin-bottom: 18px; }
+        .lead{ color:#4b5563; max-width: 760px; }
+        .grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+        .card{
+          background:#fff; border:1px solid rgba(15,17,32,0.06); border-radius: 18px; padding: 22px; box-shadow: 0 8px 24px rgba(9,11,20,0.05);
+        }
+        .card h3{ margin-top:10px; }
+        .icon{ width:24px; height:24px; }
+
+        /* How it works */
+        .steps{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 28px; }
+        .step{ background: linear-gradient(180deg, #ffffff, #fbfbff); border:1px solid rgba(15,17,32,0.06); border-radius: 18px; padding: 22px; }
+        .step .num{ width: 36px; height:36px; border-radius: 12px; display:inline-flex; align-items:center; justify-content:center; font-weight:800; color:white; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: 0 6px 16px rgba(34,211,238,0.25); }
+
+        /* Link shelf */
+        .link-shelf{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 16px; }
+        .link-tile{ border-radius: 14px; padding: 14px 16px; border:1px solid rgba(15,17,32,0.07); background:#fff; display:flex; justify-content:space-between; align-items:center; }
+        .link-tile span{ color:#4b5563; }
+
+        /* CTAs */
+        .cta-band{ margin: 72px 0; }
+        .cta-inner{ max-width:980px; margin:0 auto; padding: 28px; border-radius: 18px; background: linear-gradient(90deg, rgba(79,70,229,0.12), rgba(34,211,238,0.12)); border:1px solid rgba(79,70,229,0.25);
+          display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+        .cta-inner p{ margin:0; color:#273146; }
+
+        /* Footer */
+        footer{ border-top:1px solid rgba(15,17,32,0.06); padding:28px 24px; background:#fff; }
+        .foot{ max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; color:#6b7280; }
+
+        /* Responsive */
+        @media (max-width: 960px){
+          .grid-3, .steps { grid-template-columns: 1fr; }
+          .stats { grid-template-columns: 1fr; }
+          .link-shelf{ grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-<main class="container prose">
-<h1><strong>Clear</strong>Health</h1>
-<h3>Healthcare Reimagined</h3>
-<nav class="sidebar">
-    <ul class='nav-list prose'>
-        <li class="file"><a href="mission-goals.html">Mission and Goals</a></li>
-        <li class="file"><a href="approach.html">Approach</a></li>
-        <li class="file"><a href="concept.html">Concept Overview</a></li>
-        <li class="file"><a href="plan-document-outline.html">Plan Document and Outline</a></li>
-        <li class="file"><a href="core-idea.html">Core Idea</a></li>
-        <li class="file"><a href="pricing.html">Pricing</a></li>
-        <li class="file"><a href="launch-blueprint.html">Launch Blueprint</a></li>
-        <li class="file"><a href="claims.html">Claims</a></li>
-        <li class="file"><a href="provider-perspective.html">Provider Perspective</a></li>
-        <li class="file"><a href="provider-introduction.html">Provider Introduction</a></li>
-        <li class="file"><a href="concierge-integration.html">Concierge Integration</a></li>
-        <li class="file"><a href="concierge-operating-model.html">Concierge Operating Model</a></li>
-        <li class="file"><a href="prescription-strategy.html">Prescription Strategy</a></li>
-        <li class="file"><a href="prescription-fulfillment.html">Prescription Fulfillment</a></li>
-        <li class="file"><a href="clearhealthrx.html">ClearHealthRx</a></li>
-        <li class="file"><a href="clearhealthrx-vendor-shortlist.html">ClearHealthRx Vendor Shortlist</a></li>
-    </ul>
-</nav>
+<header class="site-header" aria-label="Primary">
+    <div class="nav-wrap">
+        <a class="brand" href="#" aria-label="ClearHealth home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Clear<strong>Health</strong></span>
+        </a>
+        <nav class="nav" aria-label="Site">
+            <a href="#how">How it works</a>
+            <a href="#values">Why ClearHealth</a>
+            <a href="#learn">Learn</a>
+            <a class="cta" href="#get-started">Get started</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <h1>Healthcare that’s <span class="accent">clear</span> on price and <span class="accent">kind</span> on people.</h1>
+        <p>Simple, transparent coverage that puts cash-first pricing at the center. Members pay the cash price or a fair cap (Medicare + 20%)—whichever is lower. Providers get paid quickly. You get control.</p>
+        <div class="hero-cta">
+            <a class="button primary" href="#get-started">Join the waitlist</a>
+            <a class="button ghost" href="#learn">Explore the plan</a>
+        </div>
+
+        <div class="stats" role="list" aria-label="Proof points">
+            <div class="stat" role="listitem"><strong>0 surprises</strong><span>Clear, upfront prices—every time</span></div>
+            <div class="stat" role="listitem"><strong>72‑hour</strong><span>target for provider payments</span></div>
+            <div class="stat" role="listitem"><strong>1 simple rule</strong><span>Cash price or Medicare + 20%</span></div>
+        </div>
+    </section>
+
+    <!-- Value props -->
+    <section class="section" id="values">
+        <h2>Why ClearHealth</h2>
+        <p class="lead">We’ve rethought the plan around three promises: transparency for members, dignity for providers, and ruthless simplicity for everyone.</p>
+        <div class="grid-3">
+            <article class="card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <h3>Cash‑first simplicity</h3>
+                <p>Pay the posted cash price or Medicare + 20%—whichever is lower. No networks to decode. No mystery bills.</p>
+            </article>
+            <article class="card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <h3>Fast, fair payments</h3>
+                <p>Providers get paid quickly on clean claims with minimal admin—and can still use their cash pricing.</p>
+            </article>
+            <article class="card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21v-7a8 8 0 1 1 16 0v7"/><circle cx="12" cy="13" r="4"/></svg>
+                <h3>Member‑first protection</h3>
+                <p>Catastrophic coverage caps the worst‑case scenario while everyday care stays affordable and predictable.</p>
+            </article>
+        </div>
+
+        <!-- Link shelf into your existing docs -->
+        <div class="link-shelf" id="learn" aria-label="Learn more">
+            <a class="link-tile" href="mission-goals.html"><span>Mission & Goals</span>→</a>
+            <a class="link-tile" href="concept.html"><span>Concept Overview</span>→</a>
+            <a class="link-tile" href="pricing.html"><span>Pricing</span>→</a>
+            <a class="link-tile" href="claims.html"><span>Claims Experience</span>→</a>
+            <a class="link-tile" href="provider-perspective.html"><span>Provider Perspective</span>→</a>
+            <a class="link-tile" href="prescription-strategy.html"><span>Prescription Strategy</span>→</a>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+        <h2>How it works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="num" aria-hidden="true">1</div>
+                <h3>See the price up front</h3>
+                <p>Your ClearHealth card tells providers: bill the posted cash price or Medicare + 20% (lower of the two).</p>
+            </div>
+            <div class="step">
+                <div class="num" aria-hidden="true">2</div>
+                <h3>You pay, we back you up</h3>
+                <p>Swipe your HSA/debit like normal. If the visit is eligible, we reconcile instantly or reimburse fast.</p>
+            </div>
+            <div class="step">
+                <div class="num" aria-hidden="true">3</div>
+                <h3>Catastrophic safety net</h3>
+                <p>Big events trigger coverage automatically. No balance‑billing, no out‑of‑network gotchas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member CTA -->
+    <section class="cta-band" id="get-started" aria-label="Get started">
+        <div class="cta-inner">
+            <p><strong>Be first in line.</strong> Help us pilot ClearHealth in your state and shape what modern coverage should be.</p>
+            <div>
+                <a class="button primary" href="#">Join the waitlist</a>
+                <a class="button ghost" href="launch-blueprint.html">See our launch blueprint</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Provider CTA -->
+    <section class="section" aria-label="For providers">
+        <h2>For providers</h2>
+        <p class="lead">Keep your cash pricing. Get paid faster. Spend less time on admin. We work with small practices and concierge clinics.</p>
+        <div class="grid-3">
+            <article class="card">
+                <h3>Cash or Medicare+20%</h3>
+                <p>A simple rule that respects your posted rates and ensures fairness for patients.</p>
+                <p><a href="provider-perspective.html">Provider perspective →</a></p>
+            </article>
+            <article class="card">
+                <h3>Low‑friction claims</h3>
+                <p>Clean digital submissions, minimal attachment overhead, and rapid adjudication.</p>
+                <p><a href="provider-introduction.html">How to get started →</a></p>
+            </article>
+            <article class="card">
+                <h3>Concierge‑friendly</h3>
+                <p>Seamless with concierge models. Transparent for members. Predictable for you.</p>
+                <p><a href="concierge-integration.html">Concierge integration →</a></p>
+            </article>
+        </div>
+    </section>
 </main>
+
+<footer>
+    <div class="foot">
+        <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Clear<strong>Health</strong></span></div>
+        <div>
+            <a href="approach.html">Approach</a> ·
+            <a href="plan-document-outline.html">Plan Outline</a> ·
+            <a href="clearhealthrx.html">ClearHealthRx</a> ·
+            <a href="clearhealthrx-vendor-shortlist.html">Vendor shortlist</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth. All rights reserved.</small>
+    </div>
+</footer>
+
+<script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
