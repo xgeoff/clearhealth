@@ -1,4 +1,4 @@
-title = "Grimoire Site"
+title = "ClearHealth"
 baseUrl = "/"
-outputDir = "public"
+outputDir = "docs"
 sourceDir = "."
