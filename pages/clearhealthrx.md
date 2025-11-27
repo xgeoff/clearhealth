@@ -2,6 +2,67 @@
 title = "ClearHealthRx Discount Program Setup"
 ---
 
+# 💊 ClearHealthRx — Transparent Savings for Every Prescription
+
+ClearHealth is built around a simple idea: members should always know what care costs, pay only what’s necessary, and never be trapped in opaque pricing.
+That same philosophy extends to prescriptions.
+
+## 🌿 The ClearHealth Prescription Strategy
+
+Our plan integrates directly with **Cost Plus Drugs**, a trusted mail-order pharmacy offering medications at *actual cost + 15% + $3 pharmacy fee + $5 shipping*.
+Most members will find everything they need through Cost Plus — transparent, HSA-eligible, and free of traditional PBM markups.
+
+But for medications **not yet available** through Cost Plus, we provide a seamless fallback: **ClearHealthRx.**
+
+
+## 💳 Introducing ClearHealthRx
+
+**ClearHealthRx** is our nationwide prescription discount card, built to fill the gaps in Cost Plus coverage.
+It gives members access to discounted cash pricing at over 60,000 retail pharmacies while keeping the same transparency and member-first principles.
+
+**How it works:**
+
+1. Search your medication in the ClearHealth portal or app.
+2. See both prices — Cost Plus vs ClearHealthRx — instantly.
+3. Choose mail-order delivery or in-store pickup.
+4. Pay the displayed price. No hidden fees, no surprise markups.
+
+
+## ⚙️ The Strategy Behind It
+
+ClearHealthRx partners with trusted, transparent pharmacy networks to ensure:
+
+* **Low, predictable pricing** for non-Cost Plus drugs.
+* **HSA eligibility** for all transactions.
+* **Data feedback loops** that help us identify which medications to add to Cost Plus over time.
+* **No hidden rebates** — what you see is what you pay.
+
+Together, **Cost Plus + ClearHealthRx** provide complete prescription coverage under one unified experience.
+
+
+## 🪪 Card Design
+
+Below is where your card visuals will go once finalized:
+
+![ClearHealthRX Discount Card Front](./images/discount-card-front-1.png)
+
+![ClearHealthRX Discount Card Back](./images/discount-card-back-1.png)
+
+
+## 🧭 Why It Matters
+
+By combining the Cost Plus direct-price model with the ClearHealthRx discount network:
+
+* You eliminate PBM games and rebate distortions.
+* Members always see their real, lowest available cost.
+* Providers and pharmacists work within a single, transparent system.
+
+It’s simple, fair, and clear — just like every other part of ClearHealth.
+
+
+**ClearHealthRx**
+Transparent savings. Nationwide access.
+*For medications Cost Plus doesn’t carry — we’ve got you covered.*
 
 ## ⚙️ How Discount Cards Actually Work
 
@@ -17,7 +78,6 @@ So for ClearHealthRx, you need:
 2. **Pricing table** — usually a “cost + markup + fee” structure.
 3. **Card issuing and BIN registration** — handled by your processor partner.
 4. **Portal or app** — to look up drugs and display prices to members.
-
 
 
 ## 🧱 Ways to Set It Up
