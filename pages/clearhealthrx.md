@@ -42,8 +42,6 @@ Together, **Cost Plus + ClearHealthRx** provide complete prescription coverage u
 
 ## 🪪 Card Design
 
-Below is where your card visuals will go once finalized:
-
 ![ClearHealthRX Discount Card Front](./images/discount-card-front-1.png)
 
 ![ClearHealthRX Discount Card Back](./images/discount-card-back-1.png)
