@@ -34,7 +34,7 @@ You can use *any of three easy methods* — whichever fits your workflow.
 
 ### **Option 1: Quick Portal (Fastest)**
 
-1. Go to **[clearhealth.io/providers](https://clearhealth.io/providers)**
+1. Go to **[clearhealth.life/providers](https://clearhealth.life/providers)**
 2. Enter the patient’s Member ID and your CPT code(s).
 3. See the **exact ClearHealth rate** (120% of Medicare).
 4. Collect payment from the patient or submit the claim for payment.
@@ -49,7 +49,7 @@ No login is required for simple lookups.
 If you already have a cash or self-pay process, simply:
 
 * Bill the patient directly at your usual cash price, **or**
-* Send the invoice to **[claims@clearhealth.io](mailto:claims@clearhealth.io)** (PDF or itemized bill).
+* Send the invoice to **[claims@clearhealth.life](mailto:claims@clearhealth.life)** (PDF or itemized bill).
 
 We’ll verify the service, process payment, and send ACH within **two business days.**
 
@@ -66,7 +66,7 @@ Submit through your clearinghouse as usual with:
 | **Payer ID**   | CLH01                                                   |
 | **Address**    | 1000 ClearHealth Way, Seattle, WA 98101                 |
 | **Phone**      | 1-800-CLEAR-00                                          |
-| **Email**      | [support@clearhealth.io](mailto:support@clearhealth.io) |
+| **Email**      | [support@clearhealth.life](mailto:support@clearhealth.life) |
 
 Claims submitted this way are adjudicated in **hours**, not weeks.
 
@@ -112,8 +112,8 @@ If you can send an invoice, we can pay you.
 ## 📞 Support
 
 **Provider Support Line:** 1-800-CLEAR-00
-**Email:** [providers@clearhealth.io](mailto:providers@clearhealth.io)
-**Portal:** [clearhealth.io/providers](https://clearhealth.io/providers)
+**Email:** [providers@clearhealth.life](mailto:providers@clearhealth.life)
+**Portal:** [clearhealth.life/providers](https://clearhealth.life/providers)
 
 We’re based in Seattle, and our support team actually answers the phone.
 We exist to make this *less painful* for everyone.
@@ -143,5 +143,5 @@ That’s it.
 
 **ClearHealth Basic**
 *Transparent. HSA-friendly. Fast-paying.*
-📍 Seattle, WA 🌐 [clearhealth.io](https://clearhealth.io)
+📍 Seattle, WA 🌐 [clearhealth.life](https://clearhealth.life)
 

@@ -166,6 +166,6 @@ For self-funded employers or individual aggregators:
 
 **Plan Administrator:** ClearHealth Administration Services
 **Mailing Address:** [PO Box / City, State, ZIP]
-**Customer Service:** 1-800-XXX-XXXX | [support@clearhealth.io](mailto:support@clearhealth.io)
-**Appeals:** [appeals@clearhealth.io](mailto:appeals@clearhealth.io)
+**Customer Service:** 1-800-XXX-XXXX | [support@clearhealth.life](mailto:support@clearhealth.life)
+**Appeals:** [appeals@clearhealth.life](mailto:appeals@clearhealth.life)
 

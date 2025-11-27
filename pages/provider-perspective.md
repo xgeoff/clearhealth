@@ -68,7 +68,7 @@ If they already have a **cash price list**, you tell them:
 > “Bill me your normal self-pay price or your Medicare rate × 1.2 — whichever is lower.
 > You’ll be paid electronically within 2 business days.”
 
-They send a PDF or itemized invoice to [claims@clearhealth.io](mailto:claims@clearhealth.io) or upload to your site.
+They send a PDF or itemized invoice to [claims@clearhealth.life](mailto:claims@clearhealth.life) or upload to your site.
 ClearHealth processes it automatically.
 
 📅 Payment: within 48 hours via ACH.
@@ -101,7 +101,7 @@ ClearHealth provides:
 * Or a **QR code on the member’s card** that opens their rate page:
 
   ```
-  clearhealth.io/rates/99213 → shows $114 for this region
+  clearhealth.life/rates/99213 → shows $114 for this region
   ```
 
 No negotiations, no mystery.
