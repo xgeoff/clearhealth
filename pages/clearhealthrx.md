@@ -102,8 +102,7 @@ So for ClearHealthRx, you need:
 ## 📜 Regulatory & Business Notes
 
 * Discount cards are **not considered insurance**, so regulation is light.
-
-    * You’ll need to **register as a discount medical plan organization (DMPO)** in a handful of states (TX, FL, IL, LA, etc.).
+* You’ll need to **register as a discount medical plan organization (DMPO)** in a handful of states (TX, FL, IL, LA, etc.).
 * The **partner handles HIPAA** for claim data; you just receive anonymized reporting unless you take on the compliance burden yourself.
 * Some partners pay you a **small per-fill rebate** (e.g., $1–$3) or let you pass all savings to members.
 
