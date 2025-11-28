@@ -112,5 +112,4 @@ So for ClearHealthRx, you need:
 * Cost Plus becomes your **preferred pharmacy**.
 * ClearHealthRx becomes your **fallback cash network** for everything else.
 * Both are HSA-compatible and transparent — no hidden rebates, no spread pricing.
-
 * You can **cross-promote**: members using Cost Plus get a ClearHealthRx card for non-Cost Plus meds.
