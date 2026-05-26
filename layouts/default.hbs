@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,13 +177,39 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
     {{{content}}}
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

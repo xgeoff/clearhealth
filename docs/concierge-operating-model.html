@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,13 +177,15 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
-    <h1>Concierge &amp; DPC Operating Model with ClearHealth</h1>
+    <h1 id="concierge--dpc-operating-model-with-clearhealth">Concierge &amp; DPC Operating Model with ClearHealth</h1>
 <p>Combining a <strong>Direct Primary Care (DPC)</strong> or <strong>Concierge Medicine</strong> practice with your <strong>ClearHealth High Deductible Health Plan (HDHP)</strong> can create a powerful, patient-centered healthcare experience.
 It aligns incentives for preventive care while providing comprehensive coverage for major medical events.</p>
 <p>Step by step <strong>legally and operationally structure</strong>:
@@ -164,7 +193,7 @@ It aligns incentives for preventive care while providing comprehensive coverage 
 2️⃣ contract relationships,
 3️⃣ money flow,
 4️⃣ how to position it in marketing and compliance materials.</p>
-<h2>⚖️ 1. Legal &amp; Regulatory Model</h2>
+<h2 id="-1-legal--regulatory-model">⚖️ 1. Legal &amp; Regulatory Model</h2>
 <p>You’ll be combining <strong>two entities</strong> under one “member experience,” but they must remain legally separate:</p>
 <table>
 <thead>
@@ -178,16 +207,16 @@ It aligns incentives for preventive care while providing comprehensive coverage 
 <p>➡ The <strong>key to preserving HSA eligibility</strong> is that ClearHealth never directly pays for or bundles the concierge subscription as part of the insurance policy.
 The member pays that separately (or via payroll deduction if an employer offers both).</p>
 <p>The IRS considers a plan “non-HSA eligible” if it provides <em>first-dollar medical coverage</em> before the deductible is met — so concierge fees must be kept outside the HDHP.</p>
-<h2>🧾 2. Contractual Relationships</h2>
+<h2 id="-2-contractual-relationships">🧾 2. Contractual Relationships</h2>
 <p>You’ll need three simple, separate agreements:</p>
-<h3><strong>A. Member ↔ ClearHealth (Insurance Agreement)</strong></h3>
+<h3 id="a-member--clearhealth-insurance-agreement"><strong>A. Member ↔ ClearHealth (Insurance Agreement)</strong></h3>
 <ul>
 <li>Standard HDHP terms (IRS-compliant, ERISA or state-regulated).</li>
 <li>Member agrees to pay monthly premium.</li>
 <li>Plan covers catastrophic and post-deductible medical expenses.</li>
 <li>Defines reference pricing (120% of Medicare), Cost Plus drug pricing, deductible, etc.</li>
 </ul>
-<h3><strong>B. Member ↔ Concierge Practice (Service Agreement)</strong></h3>
+<h3 id="b-member--concierge-practice-service-agreement"><strong>B. Member ↔ Concierge Practice (Service Agreement)</strong></h3>
 <ul>
 <li>A direct primary care contract (between patient and physician).</li>
 <li>Describes the scope of included services (routine visits, messaging, labs).</li>
@@ -195,7 +224,7 @@ The member pays that separately (or via payroll deduction if an employer offers 
 <li>Payment handled directly (credit card, ACH, or payroll deduction).</li>
 <li>Optional clause: “This membership does not impact HSA eligibility for the ClearHealth HDHP.”</li>
 </ul>
-<h3><strong>C. ClearHealth ↔ Concierge Practice (Marketing &amp; Data-Sharing Agreement)</strong></h3>
+<h3 id="c-clearhealth--concierge-practice-marketing--data-sharing-agreement"><strong>C. ClearHealth ↔ Concierge Practice (Marketing &amp; Data-Sharing Agreement)</strong></h3>
 <ul>
 <li>
 <p>Defines a <strong>non-financial partnership</strong>:</p>
@@ -209,7 +238,7 @@ The member pays that separately (or via payroll deduction if an employer offers 
 <p>Optional referral incentive (fixed marketing fee, not percentage-based premium sharing).</p>
 </li>
 </ul>
-<h2>💰 3. Money Flow</h2>
+<h2 id="-3-money-flow">💰 3. Money Flow</h2>
 <p>Here’s the simple, compliant flow of funds:</p>
 <pre><code>        Member
           │
@@ -227,29 +256,29 @@ ClearHealth      Concierge Practice
 <li>Pay cash (counts toward deductible), or</li>
 <li>Submit the invoice to ClearHealth once deductible is met.</li>
 </ul>
-<h2>🧩 4. Example Contract Language (Simplified)</h2>
-<h3><strong>Concierge Service Agreement (Excerpt)</strong></h3>
+<h2 id="-4-example-contract-language-simplified">🧩 4. Example Contract Language (Simplified)</h2>
+<h3 id="concierge-service-agreement-excerpt"><strong>Concierge Service Agreement (Excerpt)</strong></h3>
 <blockquote>
 <p>This Agreement is between Dr. Jane Smith, MD (“Provider”) and John Doe (“Patient”).
 Provider agrees to make available routine and preventive medical services described herein for an annual fee of $1,200.
 This Agreement is <strong>not health insurance</strong>, does not cover hospital services, emergency care, or care provided by other physicians or facilities, and does not replace insurance coverage.</p>
 <p>Patient acknowledges that their ClearHealth HDHP remains their primary insurance plan and that this Agreement does not affect their eligibility to contribute to a Health Savings Account (HSA).</p>
 </blockquote>
-<h3><strong>ClearHealth – Provider Affiliation Agreement (Excerpt)</strong></h3>
+<h3 id="clearhealth--provider-affiliation-agreement-excerpt"><strong>ClearHealth – Provider Affiliation Agreement (Excerpt)</strong></h3>
 <blockquote>
 <p>The Provider agrees to make ClearHealth members aware of the ClearHealth HDHP as an optional catastrophic coverage plan.
 Provider may disclose non-identifiable utilization data to ClearHealth for the purposes of coordination, analysis, and quality reporting.
 Provider shall not receive any portion of insurance premiums or act as an agent of the Plan.</p>
 </blockquote>
-<h2>🧠 5. Marketing and Positioning</h2>
-<h3><strong>For Members</strong></h3>
+<h2 id="-5-marketing-and-positioning">🧠 5. Marketing and Positioning</h2>
+<h3 id="for-members"><strong>For Members</strong></h3>
 <blockquote>
 <p>“Keep your personal doctor. Get real insurance for the big stuff.”
 ClearHealth covers hospitals, specialists, and emergencies.
 Your DPC or concierge doctor covers everything else.
 Together, you get full-spectrum care with total price transparency.</p>
 </blockquote>
-<h3><strong>For Doctors</strong></h3>
+<h3 id="for-doctors"><strong>For Doctors</strong></h3>
 <blockquote>
 <p>“You’re already doing direct primary care. We give your patients affordable catastrophic protection — without making you deal with insurance.”</p>
 <ul>
@@ -258,7 +287,7 @@ Together, you get full-spectrum care with total price transparency.</p>
 <li>Your patients stay loyal because they finally have coverage for major medical events.</li>
 </ul>
 </blockquote>
-<h3><strong>For Investors</strong></h3>
+<h3 id="for-investors"><strong>For Investors</strong></h3>
 <blockquote>
 <p>“ClearHealth bridges the gap between direct primary care and traditional insurance.”</p>
 <ul>
@@ -268,7 +297,7 @@ Together, you get full-spectrum care with total price transparency.</p>
 <li>Preserves HSA compatibility (IRS HDHP compliant).</li>
 </ul>
 </blockquote>
-<h2>📊 6. Growth and Partnerships</h2>
+<h2 id="-6-growth-and-partnerships">📊 6. Growth and Partnerships</h2>
 <p>You could start with <strong>pilot partnerships</strong>:</p>
 <ul>
 <li>3–5 concierge clinics or DPC practices in Washington and Oregon.</li>
@@ -284,7 +313,7 @@ Together, you get full-spectrum care with total price transparency.</p>
 <li>Elation Health (EHR with DPC support)</li>
 </ul>
 <p>These platforms already handle billing, scheduling, and contracts — meaning integration is low-cost.</p>
-<h2>✅ 7. Summary</h2>
+<h2 id="-7-summary">✅ 7. Summary</h2>
 <table>
 <thead>
 <tr><th>Objective</th><th>Implementation</th></tr>
@@ -299,5 +328,29 @@ Together, you get full-spectrum care with total price transparency.</p>
 </table>
 
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

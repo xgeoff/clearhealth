@@ -12,7 +12,8 @@ layout = "main-landing"
         <nav class="nav" aria-label="Site">
             <a href="#values">Why ClearHealth</a>
             <a href="#how">How it works</a>
-            <a class="cta" href="#learn">Learn</a>
+            <a href="investor-overview.html">For Investors</a>
+            <a class="cta" href="#learn">Explore</a>
         </nav>
     </div>
 </header>
@@ -31,6 +32,41 @@ layout = "main-landing"
             <div class="stat" role="listitem"><strong>0 surprises</strong><span>Clear, upfront prices—every time</span></div>
             <div class="stat" role="listitem"><strong>72‑hour</strong><span>target for provider payments</span></div>
             <div class="stat" role="listitem"><strong>1 simple rule</strong><span>Cash price or Medicare + 20%</span></div>
+        </div>
+    </section>
+
+    <!-- Plain-English Explainer -->
+    <section class="section explainer-section" id="what-is-this">
+        <div class="explainer-box">
+            <h2>What is ClearHealth, exactly?</h2>
+            <p>ClearHealth is a <strong>transparent, member-funded health coverage pool</strong> — an alternative to traditional insurance designed around cash pricing and simplicity.</p>
+            <div class="explainer-steps">
+                <div class="explainer-step">
+                    <div class="explainer-num">1</div>
+                    <div>
+                        <strong>You contribute monthly</strong> to a shared fund (like a co-op), paired with your own HSA account. No opaque premium math.
+                    </div>
+                </div>
+                <div class="explainer-step">
+                    <div class="explainer-num">2</div>
+                    <div>
+                        <strong>See the price before you go.</strong> Your plan card tells any provider: "bill your posted cash price or 120% of Medicare — whichever is lower." You pay from your HSA until your deductible is met.
+                    </div>
+                </div>
+                <div class="explainer-step">
+                    <div class="explainer-num">3</div>
+                    <div>
+                        <strong>Prescriptions through Cost Plus Drugs</strong> by default — drug cost + 15%, no PBM markups. Real prices, every time.
+                    </div>
+                </div>
+                <div class="explainer-step">
+                    <div class="explainer-num">4</div>
+                    <div>
+                        <strong>Big events are covered.</strong> Stop-loss reinsurance kicks in for claims over $50k. You’re protected. The fund is protected.
+                    </div>
+                </div>
+            </div>
+            <p class="explainer-bottom">Think of it as <em>the plan that finally plays nice with your HSA</em> — and nothing else.</p>
         </div>
     </section>
 
@@ -56,14 +92,30 @@ layout = "main-landing"
             </article>
         </div>
 
-        <!-- Link shelf into your existing docs -->
-        <div class="link-shelf" id="learn" aria-label="Learn more">
-            <a class="link-tile" href="mission-goals.html"><span>Mission & Goals</span>→</a>
-            <a class="link-tile" href="concept.html"><span>Concept Overview</span>→</a>
-            <a class="link-tile" href="pricing.html"><span>Pricing</span>→</a>
-            <a class="link-tile" href="claims.html"><span>Claims Experience</span>→</a>
-            <a class="link-tile" href="provider-perspective.html"><span>Provider Perspective</span>→</a>
-            <a class="link-tile" href="prescription-strategy.html"><span>Prescription Strategy - ClearHealthRx</span>→</a>
+        <!-- Dual-track learn section -->
+        <div class="learn-tracks" id="learn" aria-label="Learn more">
+            <div class="learn-track">
+                <div class="track-label member-label">For Members</div>
+                <div class="link-shelf">
+                    <a class="link-tile" href="mission-goals.html"><span>Mission & Goals</span>→</a>
+                    <a class="link-tile" href="concept.html"><span>How the Plan Works</span>→</a>
+                    <a class="link-tile" href="prescription-strategy.html"><span>Prescription Strategy</span>→</a>
+                    <a class="link-tile" href="claims.html"><span>Claims Experience</span>→</a>
+                    <a class="link-tile" href="concierge-integration.html"><span>Concierge & DPC Integration</span>→</a>
+                    <a class="link-tile" href="plan-document-outline.html"><span>Plan Document Outline</span>→</a>
+                </div>
+            </div>
+            <div class="learn-track">
+                <div class="track-label investor-label">For Entrepreneurs &amp; Investors</div>
+                <div class="link-shelf">
+                    <a class="link-tile featured-tile" href="investor-overview.html"><span>Executive Summary</span>→</a>
+                    <a class="link-tile" href="launch-blueprint.html"><span>Launch Blueprint</span>→</a>
+                    <a class="link-tile" href="pricing.html"><span>Pricing &amp; Business Model</span>→</a>
+                    <a class="link-tile" href="approach.html"><span>Design Approach</span>→</a>
+                    <a class="link-tile" href="clearhealthrx-vendor-shortlist.html"><span>Vendor Shortlist</span>→</a>
+                    <a class="link-tile" href="core-idea.html"><span>Stop-Loss Architecture</span>→</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -89,13 +141,19 @@ layout = "main-landing"
         </div>
     </section>
 
-    <!-- Member CTA -->
+    <!-- Dual CTA band -->
     <section class="cta-band" id="get-started" aria-label="Get started">
-        <div class="cta-inner">
-            <p><strong>Be first in line.</strong> Help us pilot ClearHealth in your state and shape what modern coverage should be.</p>
-            <div>
+        <div class="cta-inner cta-split">
+            <div class="cta-block">
+                <p class="cta-eyebrow">For members</p>
+                <p><strong>Be first in line.</strong> Help us pilot ClearHealth in your state and shape what modern coverage should be.</p>
                 <!--<a class="button primary" href="#">Join the waitlist</a>-->
-                <a class="button ghost" href="launch-blueprint.html">See our launch blueprint</a>
+            </div>
+            <div class="cta-divider" aria-hidden="true"></div>
+            <div class="cta-block">
+                <p class="cta-eyebrow">For entrepreneurs &amp; investors</p>
+                <p><strong>Reviewing the concept?</strong> See the full business case, financials, and Cost Plus integration rationale in one place.</p>
+                <a class="button ghost" href="investor-overview.html">Read the Executive Summary</a>
             </div>
         </div>
     </section>

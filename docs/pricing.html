@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,16 +177,18 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
     <p><strong>Pricing, business model, and regulatory path</strong> — focused on an HSA-compatible, transparent, low-overhead plan like <em>ClearHealth Basic.</em></p>
-<h2>💵 1. Pricing: What You Could Realistically Offer It For</h2>
+<h2 id="-1-pricing-what-you-could-realistically-offer-it-for">💵 1. Pricing: What You Could Realistically Offer It For</h2>
 <p>These estimates are based on realistic assumptions for a transparent, member-funded health plan that uses reference-based pricing and stop-loss protection.</p>
-<h3>Core assumptions</h3>
+<h3 id="core-assumptions">Core assumptions</h3>
 <ul>
 <li><strong>Plan type:</strong> HSA-compatible high-deductible plan</li>
 <li><strong>Deductible:</strong> $2,000 / $4,000 family</li>
@@ -179,7 +208,7 @@
 <tr><td><strong>Margin / reserves</strong></td><td>$15 – $30</td><td>Operating margin and risk reserves</td></tr>
 </tbody>
 </table>
-<h3>Estimated Total Monthly Contribution</h3>
+<h3 id="estimated-total-monthly-contribution">Estimated Total Monthly Contribution</h3>
 <table>
 <thead>
 <tr><th>Tier</th><th>Self-Only</th><th>Family</th></tr>
@@ -199,9 +228,9 @@
 <tr><td><strong>ClearHealth Family</strong></td><td>$4,000</td><td>$900 PMPM</td><td>Two adults plus children</td></tr>
 </tbody>
 </table>
-<h2>🏦 2. Business Model Options</h2>
+<h2 id="-2-business-model-options">🏦 2. Business Model Options</h2>
 <p>ClearHealth can scale through three structural approaches, each with its own timeline and regulatory considerations.</p>
-<h3>Option A — Partner Model (MGA / MGU Hybrid)</h3>
+<h3 id="option-a--partner-model-mga--mgu-hybrid">Option A — Partner Model (MGA / MGU Hybrid)</h3>
 <ul>
 <li>Partner with a licensed carrier that already offers HSA-eligible HDHP coverage.</li>
 <li>ClearHealth provides the transparent pricing layer and member-facing platform.</li>
@@ -210,7 +239,7 @@
 </ul>
 <p><strong>Advantages:</strong> fastest route to market, leverages carrier licensing and compliance.
 <strong>Limitations:</strong> less control over underwriting, claims, and fund logic.</p>
-<h3>Option B — Member-Funded Health Pool (Current Model)</h3>
+<h3 id="option-b--member-funded-health-pool-current-model">Option B — Member-Funded Health Pool (Current Model)</h3>
 <ul>
 <li>Members contribute monthly to the <strong>ClearHealth Fund</strong>, held in a segregated trust.</li>
 <li>ClearHealth Admin Services LLC acts as the licensed TPA and administrator.</li>
@@ -219,7 +248,7 @@
 </ul>
 <p><strong>Advantages:</strong> full control and transparency; non-ERISA, individual coverage; portable and scalable.
 <strong>Limitations:</strong> requires strong trust, compliance, and reinsurance partnerships.</p>
-<h3>Option C — Captive or Mutual Conversion (Phase 2 or 3)</h3>
+<h3 id="option-c--captive-or-mutual-conversion-phase-2-or-3">Option C — Captive or Mutual Conversion (Phase 2 or 3)</h3>
 <ul>
 <li>After scaling to several thousand members, form a regulated captive insurer.</li>
 <li>The captive assumes stop-loss risk and manages reserves and investments.</li>
@@ -227,7 +256,7 @@
 </ul>
 <p><strong>Advantages:</strong> long-term control over risk and pricing, strong alignment with members.
 <strong>Limitations:</strong> requires state licensing and $250k–$500k in capitalization.</p>
-<h3>How ClearHealth Generates Revenue</h3>
+<h3 id="how-clearhealth-generates-revenue">How ClearHealth Generates Revenue</h3>
 <table>
 <thead>
 <tr><th>Revenue Stream</th><th>Description</th></tr>
@@ -240,28 +269,28 @@
 <tr><td><strong>Surplus Retention</strong></td><td>Shared or retained margin when claims fall below projections</td></tr>
 </tbody>
 </table>
-<h2>⚖️ 3. Regulatory Path</h2>
-<h3>Phase 1 — Operate as a TPA / Tech Platform</h3>
+<h2 id="-3-regulatory-path">⚖️ 3. Regulatory Path</h2>
+<h3 id="phase-1--operate-as-a-tpa--tech-platform">Phase 1 — Operate as a TPA / Tech Platform</h3>
 <ul>
 <li>Register ClearHealth Admin Services LLC as a Third-Party Administrator in Washington or Delaware.</li>
 <li>Contract with stop-loss carriers, banks, and HSA custodians.</li>
 <li>Manage claims, member eligibility, and payment flow.</li>
 <li>No insurance license required; ClearHealth operates as a tech-enabled administrator.</li>
 </ul>
-<h3>Phase 2 — Member-Funded Health Pool</h3>
+<h3 id="phase-2--member-funded-health-pool">Phase 2 — Member-Funded Health Pool</h3>
 <ul>
 <li>Launch ClearHealth Basic for individuals and small LLCs.</li>
 <li>Maintain funds in trust for transparency and member protection.</li>
 <li>Use stop-loss coverage to guard against catastrophic losses.</li>
 <li>Remains outside ERISA and state group plan regulations.</li>
 </ul>
-<h3>Phase 3 — Captive Formation (After Scale)</h3>
+<h3 id="phase-3--captive-formation-after-scale">Phase 3 — Captive Formation (After Scale)</h3>
 <ul>
 <li>Apply for a captive license in Vermont, Delaware, or Hawaii.</li>
 <li>The captive reinsures the ClearHealth Fund and manages surplus reserves.</li>
 <li>Optional step toward becoming a regulated mutual insurer.</li>
 </ul>
-<h2>📊 4. Suggested Execution Timeline</h2>
+<h2 id="-4-suggested-execution-timeline">📊 4. Suggested Execution Timeline</h2>
 <table>
 <thead>
 <tr><th>Phase</th><th>Focus</th><th>Duration</th><th>Goal</th></tr>
@@ -273,7 +302,7 @@
 <tr><td><strong>18–24 months</strong></td><td>Prepare captive licensing and capitalization</td><td>6 months</td><td>Transition to risk-bearing entity</td></tr>
 </tbody>
 </table>
-<h2>🌐 5. Positioning Summary</h2>
+<h2 id="-5-positioning-summary">🌐 5. Positioning Summary</h2>
 <p><strong>Tagline:</strong></p>
 <blockquote>
 <p>“Transparent, HSA-friendly health coverage with honest prices and no networks.”</p>
@@ -304,5 +333,29 @@
 ClearHealth begins as a transparent, member-funded health coverage pool, evolves into a technology-driven cooperative structure with stop-loss protection, and matures into a captive framework that gives members ownership and control of their healthcare funding — all without entering the employer-sponsored or ERISA-regulated ecosystem.</p>
 
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

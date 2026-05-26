@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,21 +177,23 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
     <p>A <strong>member-to-medication workflow</strong> that shows how your plan could integrate <strong>Cost Plus Drugs</strong> as the default channel and your own <strong>discount fallback</strong> for uncovered meds.</p>
-<h2>💊 Prescription Fulfillment Flow</h2>
-<h3><strong>1. Prescription Issued</strong></h3>
+<h2 id="-prescription-fulfillment-flow">💊 Prescription Fulfillment Flow</h2>
+<h3 id="1-prescription-issued"><strong>1. Prescription Issued</strong></h3>
 <ul>
 <li>Member visits a doctor or telehealth provider.</li>
 <li>The prescription is sent electronically (e-prescribed) or printed.</li>
 <li>Doctor uses standard e-prescribing software (e.g., Surescripts), no special setup required.</li>
 </ul>
-<h3><strong>2. Member Portal / App Lookup</strong></h3>
+<h3 id="2-member-portal--app-lookup"><strong>2. Member Portal / App Lookup</strong></h3>
 <ul>
 <li>
 <p>The member logs into your plan’s portal or app, which connects to:</p>
@@ -181,7 +210,7 @@
 </ul>
 </li>
 </ul>
-<h3><strong>3. Decision Point</strong></h3>
+<h3 id="3-decision-point"><strong>3. Decision Point</strong></h3>
 <table>
 <thead>
 <tr><th>Scenario</th><th>Action</th><th>Payment</th><th>Notes</th></tr>
@@ -192,7 +221,7 @@
 <tr><td><strong>Emergency or urgent fill</strong></td><td>Member uses local pharmacy immediately</td><td>Discount card accepted</td><td>Optional: plan can reimburse cost gap after claim upload.</td></tr>
 </tbody>
 </table>
-<h3><strong>4. Claim Capture (Optional but Valuable)</strong></h3>
+<h3 id="4-claim-capture-optional-but-valuable"><strong>4. Claim Capture (Optional but Valuable)</strong></h3>
 <ul>
 <li>
 <p>Even though these are “cash” transactions, the member portal records:</p>
@@ -212,13 +241,13 @@
 </ul>
 </li>
 </ul>
-<h3><strong>5. Catastrophic Protection</strong></h3>
+<h3 id="5-catastrophic-protection"><strong>5. Catastrophic Protection</strong></h3>
 <ul>
 <li>If a member’s total annual medication spend exceeds your catastrophic threshold (say &gt;$5 000), your <strong>catastrophic coverage</strong> or <strong>stop-loss policy</strong> kicks in.</li>
 <li>The plan reimburses all further medication costs that year.</li>
 <li>Reinsurance can backstop this layer for predictability.</li>
 </ul>
-<h2>⚙️ System Architecture Overview</h2>
+<h2 id="-system-architecture-overview">⚙️ System Architecture Overview</h2>
 <p><strong>Front end:</strong> member portal or app
 <strong>Back end:</strong></p>
 <ul>
@@ -227,7 +256,7 @@
 <li>Simple “claims-light” ledger (JSON or FHIR format) for recordkeeping</li>
 <li>Rules engine to trigger catastrophic reimbursements and reinsurance events</li>
 </ul>
-<h2>🪙 Example Member Experience</h2>
+<h2 id="-example-member-experience">🪙 Example Member Experience</h2>
 <blockquote>
 <p><em>“You have a prescription for Atorvastatin 20 mg.”</em>
 – Cost Plus price: $3.60 + $5 shipping
@@ -240,5 +269,29 @@
 </blockquote>
 
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

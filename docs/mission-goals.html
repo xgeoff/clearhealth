@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,21 +177,23 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
     <p><strong>ClearHealth's mission and goals</strong> center on transforming health insurance into a transparent, efficient, and user-friendly experience for both patients and providers.</p>
-<h3><strong>1. Our Mission</strong></h3>
+<h3 id="1-our-mission"><strong>1. Our Mission</strong></h3>
 <p>To make health insurance simple, transparent, and fair — for both patients and providers.
 We believe people should know exactly what care costs, pay only what’s necessary, and never have to fight their insurance company to get reimbursed.</p>
-<h3><strong>2. Our Model</strong></h3>
+<h3 id="2-our-model"><strong>2. Our Model</strong></h3>
 <p>ClearHealth combines an HSA-compatible high-deductible plan with real-time pricing and direct payment.
 Members see the true cost of care up front, pay using their HSA or card, and get reimbursed instantly when their deductible is met.
 Providers are paid in days, not months — at a fair, published rate (typically 120 % of Medicare).</p>
-<h3><strong>3. Our Goal</strong></h3>
+<h3 id="3-our-goal"><strong>3. Our Goal</strong></h3>
 <p>To build a sustainable, technology-driven alternative to traditional insurance — one that:</p>
 <ul>
 <li>Cuts administrative overhead by 70 %</li>
@@ -173,12 +202,36 @@ Providers are paid in days, not months — at a fair, published rate (typically 
 <li>Rewards transparency and preventive care</li>
 </ul>
 <p>In short: <strong>ClearHealth aims to be the health plan that doesn’t suck — simple, honest coverage for modern healthcare.</strong></p>
-<h3><strong>4. Our Vision for the Future</strong></h3>
+<h3 id="4-our-vision-for-the-future"><strong>4. Our Vision for the Future</strong></h3>
 <p>We envision a future where health insurance is no longer a barrier to care, but a seamless part of the healthcare experience.
 By leveraging technology, transparent pricing, and patient empowerment, we aim to create a system where everyone
 can access quality care without the stress and confusion of traditional insurance.
 Through continuous innovation and a commitment to our core values, ClearHealth strives to lead the way toward a more equitable and efficient healthcare system for all.</p>
 
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

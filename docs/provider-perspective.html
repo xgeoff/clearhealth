@@ -64,8 +64,17 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
+          font-size: 0.92rem;
         }
         nav a:hover { color: var(--brand-2); }
+        nav a.nav-highlight {
+          color: #4946C0;
+          border: 1px solid rgba(79,70,229,0.25);
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 0.85rem;
+        }
+        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -125,12 +134,30 @@
 
         footer {
           border-top: 1px solid rgba(0, 119, 182, 0.1);
-          padding: 24px;
-          text-align: center;
-          color: var(--muted);
+          padding: 28px 24px;
           background: #fff;
           margin-top: 60px;
         }
+        .foot-inner {
+          max-width: 960px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          align-items: flex-start;
+          color: var(--muted);
+          font-size: 0.88rem;
+        }
+        .foot-nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          min-width: 160px;
+        }
+        .foot-nav strong { color: var(--text); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .foot-nav a { color: var(--muted); text-decoration: none; }
+        .foot-nav a:hover { color: var(--brand-2); }
+        .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
@@ -150,14 +177,16 @@
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="concept.html">Concept</a>
+            <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
+            <a href="provider-introduction.html">For Providers</a>
+            <a href="investor-overview.html" class="nav-highlight">Investor Overview</a>
         </nav>
     </div>
 </header>
 <main>
     <p><strong>From the provider’s perspective</strong>, step by step, here’s how accepting ClearHealth patients works — and why it’s so easy.</p>
-<h2>🏥 1. Setting the Scene: The Small Clinic Reality</h2>
+<h2 id="-1-setting-the-scene-the-small-clinic-reality">🏥 1. Setting the Scene: The Small Clinic Reality</h2>
 <p>Think of your average small family practice or independent clinic:</p>
 <ul>
 <li>2–5 clinicians</li>
@@ -173,7 +202,7 @@
 </ul>
 <p>Their dream?
 ➡ <strong>Swipe a card or click “pay” and be done.</strong></p>
-<h2>🩺 2. What Happens When You Walk In With ClearHealth</h2>
+<h2 id="-2-what-happens-when-you-walk-in-with-clearhealth">🩺 2. What Happens When You Walk In With ClearHealth</h2>
 <p>Let’s say you show your <strong>ClearHealth Member Card</strong>.</p>
 <p>The front desk sees:</p>
 <ul>
@@ -181,7 +210,7 @@
 <li>“Pay direct, HSA-eligible. See portal for real-time pricing.”</li>
 </ul>
 <p>They have <strong>three easy options</strong>, depending on how modern they are.</p>
-<h3><strong>Option 1 — The Modern Route (Preferred)</strong></h3>
+<h3 id="option-1--the-modern-route-preferred"><strong>Option 1 — The Modern Route (Preferred)</strong></h3>
 <p>✅ <em>Instant price + instant payment</em></p>
 <ol>
 <li>
@@ -208,7 +237,7 @@
 </ol>
 <p>📅 Payment to provider: within <strong>48 hours</strong>.
 No claim denials. No waiting. No pre-auth.</p>
-<h3><strong>Option 2 — The “Cash Price” Route (Common Early On)</strong></h3>
+<h3 id="option-2--the-cash-price-route-common-early-on"><strong>Option 2 — The “Cash Price” Route (Common Early On)</strong></h3>
 <p>✅ <em>Use existing workflow — no portal, no EDI</em></p>
 <p>If they already have a <strong>cash price list</strong>, you tell them:</p>
 <blockquote>
@@ -219,7 +248,7 @@ You’ll be paid electronically within 2 business days.”</p>
 ClearHealth processes it automatically.</p>
 <p>📅 Payment: within 48 hours via ACH.</p>
 <p>This fits perfectly with practices that already see uninsured or DPC patients — <em>you’re just another fast-paying, low-hassle patient.</em></p>
-<h3><strong>Option 3 — The “Old-School Claim” Route</strong></h3>
+<h3 id="option-3--the-old-school-claim-route"><strong>Option 3 — The “Old-School Claim” Route</strong></h3>
 <p>✅ <em>EDI-friendly fallback</em></p>
 <p>If they insist on using their billing system:</p>
 <ul>
@@ -229,7 +258,7 @@ ClearHealth processes it automatically.</p>
 </ul>
 <p>📅 Payment: 3–5 days.</p>
 <p>They don’t have to learn anything new — but you still control the experience and transparency.</p>
-<h2>💡 3. How They Know What to Charge</h2>
+<h2 id="-3-how-they-know-what-to-charge">💡 3. How They Know What to Charge</h2>
 <p>ClearHealth provides:</p>
 <ul>
 <li>
@@ -243,7 +272,7 @@ ClearHealth processes it automatically.</p>
 </ul>
 <p>No negotiations, no mystery.
 It’s <em>the opposite of insurance networks</em> — simple, published, and instant.</p>
-<h2>⚙️ 4. What They Need (and Don’t Need)</h2>
+<h2 id="-4-what-they-need-and-dont-need">⚙️ 4. What They Need (and Don’t Need)</h2>
 <table>
 <thead>
 <tr><th>Requirement</th><th>Traditional Insurer</th><th>ClearHealth</th></tr>
@@ -262,7 +291,7 @@ It’s <em>the opposite of insurance networks</em> — simple, published, and in
 <blockquote>
 <p>“If you can send an invoice, we can pay you — fast.”</p>
 </blockquote>
-<h2>💰 5. The Psychology for Providers</h2>
+<h2 id="-5-the-psychology-for-providers">💰 5. The Psychology for Providers</h2>
 <p>At launch, your goal is <strong>not</strong> to “convince them to take ClearHealth” — it’s to <strong>make it frictionless to accept cash</strong> while still giving the patient insurance protection.</p>
 <p>So you position it like this:</p>
 <blockquote>
@@ -271,7 +300,7 @@ Just treat ClearHealth members like cash-pay patients.
 We’ll handle the insurance part behind the scenes — and pay you faster than any carrier.”</p>
 </blockquote>
 <p>That’s <strong>music to their ears.</strong></p>
-<h2>🧩 6. How You Build Trust Quickly</h2>
+<h2 id="-6-how-you-build-trust-quickly">🧩 6. How You Build Trust Quickly</h2>
 <ol>
 <li><strong>Pay fast.</strong> Nothing builds credibility like a 2-day ACH.</li>
 <li><strong>Be transparent.</strong> Always show them the rate table upfront.</li>
@@ -279,7 +308,7 @@ We’ll handle the insurance part behind the scenes — and pay you faster than 
 <li><strong>Provide support humans.</strong> Real contact for billing staff (not an IVR maze).</li>
 <li><strong>Recognize good behavior.</strong> Prompt payment bonuses or “trusted provider” badges.</li>
 </ol>
-<h2>🧠 7. The Backend Workflow Supporting This</h2>
+<h2 id="-7-the-backend-workflow-supporting-this">🧠 7. The Backend Workflow Supporting This</h2>
 <table>
 <thead>
 <tr><th>Step</th><th>Process</th><th>Automation</th></tr>
@@ -293,7 +322,7 @@ We’ll handle the insurance part behind the scenes — and pay you faster than 
 <tr><td>Confirmation</td><td>Provider + member notification</td><td>Email + dashboard update</td></tr>
 </tbody>
 </table>
-<h2>🚀 8. The Onboarding Playbook</h2>
+<h2 id="-8-the-onboarding-playbook">🚀 8. The Onboarding Playbook</h2>
 <table>
 <thead>
 <tr><th>Phase</th><th>Action</th><th>Outcome</th></tr>
@@ -305,7 +334,7 @@ We’ll handle the insurance part behind the scenes — and pay you faster than 
 <tr><td><strong>Month 4–6</strong></td><td>Offer optional API integrations for billing software</td><td>Scale</td></tr>
 </tbody>
 </table>
-<h3>✅ In short:</h3>
+<h3 id="-in-short">✅ In short:</h3>
 <ul>
 <li>No credentialing, no portals if they don’t want them, no special setup.</li>
 <li>They can charge their normal cash rate or check your transparent fee table.</li>
@@ -313,5 +342,29 @@ We’ll handle the insurance part behind the scenes — and pay you faster than 
 </ul>
 
 </main>
+<footer>
+    <div class="foot-inner">
+        <div class="foot-nav">
+            <strong>Members:</strong>
+            <a href="concept.html">How it Works</a>
+            <a href="prescription-strategy.html">Prescriptions</a>
+            <a href="claims.html">Claims</a>
+            <a href="concierge-integration.html">Concierge &amp; DPC</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Providers:</strong>
+            <a href="provider-introduction.html">Get Started</a>
+            <a href="provider-perspective.html">Billing &amp; Payments</a>
+        </div>
+        <div class="foot-nav">
+            <strong>Entrepreneurs:</strong>
+            <a href="investor-overview.html">Executive Summary</a>
+            <a href="launch-blueprint.html">Launch Blueprint</a>
+            <a href="pricing.html">Business Model</a>
+        </div>
+        <small>© <span id="year"></span> ClearHealth</small>
+    </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
