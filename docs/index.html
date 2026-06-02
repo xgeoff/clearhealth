@@ -183,7 +183,7 @@
           .link-shelf{ grid-template-columns: 1fr; }
           .nav a {
             margin-left: 8px;
-            font-size: 0.5rem;  /* match the template */
+            font-size: 0.95rem;
           }
           .nav .cta {
             padding: 4px 8px;  /* smaller button on phones */

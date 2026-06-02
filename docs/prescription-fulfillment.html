@@ -94,6 +94,15 @@
           color: var(--muted);
         }
 
+        main > p,
+        main > blockquote,
+        main > pre {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: left;
+        }
+
         ul, ol {
           text-align: left;
           margin: 20px auto;
@@ -163,7 +172,7 @@
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
-          nav a { margin-left: 10px; font-size: 0.9rem; }
+          nav a { margin-left: 10px; font-size: 0.95rem; }
           ul, ol { max-width: 100%; padding-left: 20px; }
         }
         table th:first-child,
