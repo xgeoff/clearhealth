@@ -64,7 +64,7 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
-          font-size: 0.92rem;
+          font-size: 0.95rem;
         }
         nav a:hover { color: var(--brand-2); }
         nav a.nav-highlight {
@@ -72,7 +72,7 @@
           border: 1px solid rgba(79,70,229,0.25);
           padding: 6px 10px;
           border-radius: 8px;
-          font-size: 0.85rem;
+          font-size: 0.95rem;
         }
         nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
