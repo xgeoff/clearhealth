@@ -64,7 +64,8 @@
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
-          font-size: 0.95rem;
+          font-size: 15px;
+          line-height: 1.3;
         }
         nav a:hover { color: var(--brand-2); }
         nav a.nav-highlight {
@@ -72,7 +73,8 @@
           border: 1px solid rgba(79,70,229,0.25);
           padding: 6px 10px;
           border-radius: 8px;
-          font-size: 0.95rem;
+          font-size: 15px;
+          line-height: 1.3;
         }
         nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
@@ -172,7 +174,7 @@
 
         @media (max-width: 600px) {
           main { margin: 40px auto; }
-          nav a { margin-left: 10px; font-size: 0.95rem; }
+          nav a { margin-left: 10px; font-size: 15px; }
           ul, ol { max-width: 100%; padding-left: 20px; }
         }
         table th:first-child,

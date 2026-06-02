@@ -65,7 +65,7 @@
           margin-left: 18px;
           font-weight: 600;
           color: var(--text);
-          font-size: 0.95rem;           /* new */
+          font-size: 15px;
           font-family: Inter, system-ui, sans-serif;
         }
         .nav a:hover {
@@ -183,7 +183,7 @@
           .link-shelf{ grid-template-columns: 1fr; }
           .nav a {
             margin-left: 8px;
-            font-size: 0.95rem;
+            font-size: 15px;
           }
           .nav .cta {
             padding: 4px 8px;  /* smaller button on phones */
@@ -210,7 +210,7 @@
             margin-left: 0;        /* remove inline margin */
             display: block;        /* stack links vertically */
             padding: 8px 0;        /* vertical tap targets */
-            font-size: 0.95rem;    /* readable on mobile */
+            font-size: 15px;
           }
           .nav .cta {
             align-self: flex-start; /* keep CTA aligned with links */
