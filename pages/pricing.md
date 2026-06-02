@@ -2,7 +2,9 @@
 title = "ClearHealth Pricing, Business Model, and Regulatory Strategy"
 ---
 
-**Pricing, business model, and regulatory path** — focused on an HSA-compatible, transparent, low-overhead plan like *ClearHealth Basic.*
+**Pricing, business model, and regulatory path** — focused on a portable, HSA-compatible, transparent, low-overhead plan like *ClearHealth Basic.*
+
+The core business case is not only lower cost. It is portability: coverage that is not owned by an employer, paired with an HSA that the member owns and can keep through job changes, self-employment, COBRA decisions, and pre-Medicare transitions.
 
 ## 💵 1. Pricing: What You Could Realistically Offer It For
 
@@ -14,7 +16,8 @@ These estimates are based on realistic assumptions for a transparent, member-fun
 * **Deductible:** $2,000 / $4,000 family
 * **Reimbursement basis:** approximately 120% of Medicare (reference-based)
 * **Stop-loss attachment:** $50,000 per individual
-* **Target market:** healthy to average-risk individuals (freelancers, LLC owners, and families)
+* **HSA funding:** member contributions plus optional employer contributions where allowed
+* **Target market:** healthy to average-risk individuals, families, freelancers, LLC owners, small employers, and workers facing COBRA or job transitions
 
 | Cost Component              | Range (PMPM) | Description                                  |
 | --------------------------- | ------------ | -------------------------------------------- |
@@ -30,13 +33,23 @@ These estimates are based on realistic assumptions for a transparent, member-fun
 | ----------------- | -------------------- | ---------------------- |
 | **Base estimate** | **$325 – $400 PMPM** | **$850 – $1,050 PMPM** |
 
-This equates to roughly **$3,900 – $4,800 per year for an individual**, competitive with ACA bronze HDHPs but with clear pricing, Cost Plus prescriptions, and no network restrictions.
+This equates to roughly **$3,900 – $4,800 per year for an individual**, competitive with ACA bronze HDHPs but with clear pricing, Cost Plus prescriptions, no network restrictions, and a portable HSA strategy.
 
 | Variant                | Deductible | Monthly Contribution | Audience                             |
 | ---------------------- | ---------- | -------------------- | ------------------------------------ |
 | **ClearHealth Lite**   | $3,000     | $280 PMPM            | Younger, low-utilization individuals |
 | **ClearHealth Core**   | $2,000     | $350 PMPM            | Standard member profile              |
 | **ClearHealth Family** | $4,000     | $900 PMPM            | Two adults plus children             |
+
+### Why portability changes the value proposition
+
+| Scenario | Traditional experience | ClearHealth positioning |
+| -------- | ---------------------- | ----------------------- |
+| **Job change** | New employer plan, new deductible, new network | Member keeps the coverage relationship and HSA strategy |
+| **COBRA decision** | Keep former employer coverage at full cost | Portable alternative before COBRA becomes the only bridge |
+| **Freelance / LLC work** | Individual-market plans with limited employer support | Direct member coverage with optional employer/client contribution structure |
+| **Small employer** | Full group plan administration burden | Employer can help fund healthcare without owning the whole plan |
+| **Pre-Medicare transition** | Coverage gap risk before public coverage begins | Transparent HDHP-style bridge for eligible members |
 
 ## 🏦 2. Business Model Options
 
@@ -45,7 +58,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 ### Option A — Partner Model (MGA / MGU Hybrid)
 
 * Partner with a licensed carrier that already offers HSA-eligible HDHP coverage.
-* ClearHealth provides the transparent pricing layer and member-facing platform.
+* ClearHealth provides the portable member relationship, HSA experience, transparent pricing layer, and member-facing platform.
 * Operate as a Managing General Agent (MGA) or Managing General Underwriter (MGU).
 * Revenue: per-member admin fee (around $25 PMPM) and shared margin with the carrier.
 
@@ -58,6 +71,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * ClearHealth Admin Services LLC acts as the licensed TPA and administrator.
 * Stop-loss coverage protects the fund against high-cost claims.
 * Any year-end surplus can be retained as reserves or rebated to members.
+* Employers can support members through HSA contributions or defined contribution arrangements without making the coverage employer-owned.
 
 **Advantages:** full control and transparency; non-ERISA, individual coverage; portable and scalable.
 **Limitations:** requires strong trust, compliance, and reinsurance partnerships.
@@ -88,14 +102,14 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * Register ClearHealth Admin Services LLC as a Third-Party Administrator in Washington or Delaware.
 * Contract with stop-loss carriers, banks, and HSA custodians.
 * Manage claims, member eligibility, and payment flow.
-* No insurance license required; ClearHealth operates as a tech-enabled administrator.
+* No insurance license required; ClearHealth operates as a tech-enabled administrator for a portable member relationship.
 
 ### Phase 2 — Member-Funded Health Pool
 
 * Launch ClearHealth Basic for individuals and small LLCs.
 * Maintain funds in trust for transparency and member protection.
 * Use stop-loss coverage to guard against catastrophic losses.
-* Remains outside ERISA and state group plan regulations.
+* Keep coverage individual and portable, with employer support structured around contribution rather than plan ownership.
 
 ### Phase 3 — Captive Formation (After Scale)
 
@@ -116,7 +130,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 
 **Tagline:**
 
-> “Transparent, HSA-friendly health coverage with honest prices and no networks.”
+> “Portable, HSA-friendly health coverage with honest prices and no networks.”
 
 **Revenue mix at scale:**
 
@@ -131,6 +145,8 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * Transparent reference-based pricing
 * Integrated Cost Plus prescription access
 * Real-time HSA reimbursement workflows
+* Member-owned HSA strategy with optional employer contributions
+* Coverage designed to move with the member, not the job
 * Low administrative overhead through automation
 * Portable, member-owned coverage (non-ERISA)
 * Path to captive formation for long-term stability
@@ -142,4 +158,4 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * ClearHealth positioned as a trusted, modern alternative to traditional insurance
 
 **Summary:**
-ClearHealth begins as a transparent, member-funded health coverage pool, evolves into a technology-driven cooperative structure with stop-loss protection, and matures into a captive framework that gives members ownership and control of their healthcare funding — all without entering the employer-sponsored or ERISA-regulated ecosystem.
+ClearHealth begins as a transparent, member-funded health coverage pool, evolves into a technology-driven cooperative structure with stop-loss protection, and matures into a captive framework that gives members ownership and control of their healthcare funding. The thesis is that health coverage should be portable, HSA-centered, and employer-compatible without being employer-dependent.

@@ -3,7 +3,7 @@ title = "Launch Blueprint for ClearHealth Basic"
 ---
 
 
-**Phase 1 Launch Blueprint** for *ClearHealth Basic* outlines the entity structure, operational model, and early-year financial plan for a transparent, member-funded health coverage system.
+**Phase 1 Launch Blueprint** for *ClearHealth Basic* outlines the entity structure, operational model, and early-year financial plan for a portable, member-funded health coverage system.
 
 ## 🏗️ 1. Entity & Structural Setup
 
@@ -22,6 +22,8 @@ title = "Launch Blueprint for ClearHealth Basic"
 
 ```
 Member → enrolls → pays monthly contribution
+        ↓
+Member and/or employer funds member-owned HSA
         ↓
 Funds split into:
    - Member Claim Fund (≈ 80 %)
@@ -81,7 +83,8 @@ Year-end surplus → retained for reserves or rebated to members
 * Funds are held in trust and used solely for eligible medical claims.
 * Stop-loss coverage protects the pool against catastrophic loss.
 * Members receive transparent monthly and annual statements of fund usage and reserves.
-* Because coverage is individual and portable, ERISA does not apply.
+* Because coverage is individual and portable, the model is designed to avoid employer-owned group-plan dependency.
+* Employers may contribute to member HSAs or provide defined contribution support, but the member keeps the plan relationship.
 
 ### Step 3 – Captive or Health Co-op Formation (After Year 1–2)
 
@@ -121,4 +124,4 @@ Year-end surplus → retained for reserves or rebated to members
 
 ### Summary
 
-**ClearHealth Basic** is a transparent, member-funded health coverage platform that pairs direct-care pricing with collective risk protection and HSA compatibility. Each member owns their participation directly — there is no employer sponsor and no ERISA plan. ClearHealth Admin Services manages operations and claims on behalf of the membership, while ClearHealth LLC maintains technology, contracts, and reinsurance relationships.
+**ClearHealth Basic** is a transparent, member-funded health coverage platform that pairs direct-care pricing with collective risk protection and HSA compatibility. Each member owns their participation directly; employers can help fund the member's HSA or contribution without owning the full insurance relationship. ClearHealth Admin Services manages operations and claims on behalf of the membership, while ClearHealth LLC maintains technology, contracts, and reinsurance relationships.

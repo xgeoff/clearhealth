@@ -2,7 +2,7 @@
 title = "ClearHealth Basic HDHP Plan Document Outline"
 ---
 
-**Plan document outline** for an HSA-compatible, bare-bones health plan that integrates transparent pricing and Cost Plus Drugs.
+**Plan document outline** for a portable, HSA-compatible, bare-bones health plan that integrates transparent pricing and Cost Plus Drugs.
 
 What follows is a **regulatory-compliant structure** — something that could evolve into an actual *Summary Plan Description (SPD)* and *Evidence of Coverage (EOC)* if you partnered with a licensed carrier or self-funded employer group.
 
@@ -22,7 +22,7 @@ What follows is a **regulatory-compliant structure** — something that could ev
 **Plan Year:** Calendar Year 2026 (1 Jan – 31 Dec)
 **Jurisdiction:** United States (Compliant with IRS HDHP rules and ERISA §402(a))
 
-**Purpose:** Provide affordable, transparent health coverage centered on patient choice, cost clarity, and HSA eligibility.
+**Purpose:** Provide affordable, portable, transparent health coverage centered on patient choice, cost clarity, HSA eligibility, and continuity outside the employer-sponsored insurance system.
 
 
 
@@ -32,7 +32,9 @@ What follows is a **regulatory-compliant structure** — something that could ev
 
     * Individuals or families residing in participating states.
     * Must not be enrolled in any other non-HDHP coverage.
+    * Must not be enrolled in Medicare or other disqualifying coverage if making or receiving HSA contributions.
     * Must not be claimed as a dependent on another tax return.
+    * May receive employer contribution support where allowed, but enrollment remains member-owned and portable.
 
 * **Effective Date:** First day of the month following approval of application and initial premium payment.
 
@@ -48,6 +50,8 @@ What follows is a **regulatory-compliant structure** — something that could ev
 * **Reference Rate:** 120 percent of the Medicare Allowable Amount for the same procedure or service.
 * **Direct Pay Service:** A service purchased at a published cash price (e.g., Sesame, MDsave).
 * **Cost Plus Drug:** A prescription filled through Cost Plus Drugs at actual cost + 15 % + fees.
+* **Health Savings Account (HSA):** A member-owned tax-advantaged account used for qualified medical expenses. Contributions may come from the member, an employer, or another permitted contributor subject to IRS limits and eligibility rules.
+* **Portable Coverage:** Coverage designed to remain with the member through employment changes, self-employment, COBRA decisions, and other qualifying life transitions.
 
 
 
@@ -168,4 +172,3 @@ For self-funded employers or individual aggregators:
 **Mailing Address:** [PO Box / City, State, ZIP]
 **Customer Service:** 1-800-XXX-XXXX | [support@clearhealth.life](mailto:support@clearhealth.life)
 **Appeals:** [appeals@clearhealth.life](mailto:appeals@clearhealth.life)
-

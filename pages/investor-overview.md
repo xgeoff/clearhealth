@@ -4,7 +4,7 @@ title = "Investor Overview: ClearHealth"
 
 ## ClearHealth: Executive Overview
 
-**A transparent, technology-driven alternative to traditional health insurance — built from first principles.**
+**A portable, HSA-compatible alternative to employer-tied health insurance — built from first principles.**
 
 This document is for entrepreneurs, partners, and investors who want to understand the ClearHealth business concept, financial model, and path to scale.
 
@@ -12,36 +12,67 @@ This document is for entrepreneurs, partners, and investors who want to understa
 
 ## The Problem
 
-American health insurance is broken in three specific, fixable ways:
+American health insurance is broken in four specific, fixable ways:
 
-1. **Prices are hidden.** Patients don't know what care costs until after the bill arrives. Providers don't know what they'll be paid. No one has leverage.
-2. **The middlemen capture all the margin.** PBMs, networks, and TPAs add 20–40% overhead without improving outcomes. Members pay for this invisibly.
-3. **Incentives are backwards.** Traditional insurers profit when members avoid care. ClearHealth is designed so the plan *wins* when members stay healthy and use care efficiently.
+1. **Coverage is tied to employment.** People lose leverage when changing jobs, starting a business, freelancing, retiring early, or facing COBRA. The plan relationship belongs to the employer, not the member.
+2. **The tax advantage is trapped inside the wrong structure.** HSAs are powerful, but most people experience them as a side account attached to an opaque employer plan instead of the center of a portable healthcare strategy.
+3. **Prices are hidden.** Patients don't know what care costs until after the bill arrives. Providers don't know what they'll be paid. No one has leverage.
+4. **The middlemen capture the margin.** PBMs, networks, and administrative layers add overhead without making routine care easier to understand.
 
 ---
 
 ## The Solution
 
-ClearHealth is a **member-funded, HSA-compatible health coverage pool** with three defining characteristics:
+ClearHealth is a **portable, HSA-compatible high-deductible health plan concept** with five defining characteristics:
 
 | What | How |
 |------|-----|
+| **Portable member relationship** | Coverage is designed around the individual, not the employer. Employers can contribute, but the member owns continuity. |
+| **HSA-first funding** | Eligible members use a Health Savings Account for routine care. Members can contribute directly; employers can contribute where allowed under IRS rules. |
 | **Transparent pricing** | Members always pay the *lower* of the posted cash price or 120% of Medicare. No networks to decode. No mystery bills. |
 | **Cost Plus Drugs integration** | Prescriptions routed through Mark Cuban's Cost Plus Drugs: cost + 15% + $3 fee. No PBM. No formulary. |
 | **Catastrophic safety net** | Stop-loss reinsurance kicks in at $50k per-member, protecting both members and the fund from high-cost events. |
 
-This isn't a new insurance company — it's a better-structured *alternative* to insurance, operating as a member-funded trust with TPA administration.
+This is not just a cheaper plan design. It is a different ownership model: portable coverage, tax-advantaged healthcare savings, transparent routine care, and catastrophic protection.
 
 ---
 
 ## How It Works (Plain English)
 
-1. Members pay a monthly contribution ($325–$400/mo individual) into a shared fund — like a transparent co-op.
-2. They use any doctor, any pharmacy. The plan card tells providers: *"Bill your cash price or 120% of Medicare — whichever is lower."*
-3. Members pay out-of-pocket until the $2,000 deductible is met, using their HSA. Plan covers 100% after that.
-4. Prescriptions go through Cost Plus Drugs by default — dramatically lower than PBM pricing.
-5. Large claims ($50k+) are covered by stop-loss reinsurance — the fund never faces ruinous exposure.
-6. Any year-end surplus is retained as reserves or rebated to members.
+1. Members enroll directly in portable coverage. The plan can be supported by an employer contribution, but it is not dependent on staying employed by that sponsor.
+2. Members maintain an HSA tied to the HDHP structure. Contributions can come from the member and, where allowed, from an employer.
+3. They use any doctor or pharmacy. The plan card tells providers: *"Bill your cash price or 120% of Medicare — whichever is lower."*
+4. Members pay routine care from HSA dollars until the deductible is met. The plan covers eligible expenses after that point.
+5. Prescriptions go through Cost Plus Drugs by default — dramatically lower than PBM pricing.
+6. Large claims ($50k+) are covered by stop-loss reinsurance — the fund never faces ruinous exposure.
+7. Any year-end surplus is retained as reserves or rebated to members.
+
+---
+
+## Why Portability Is the Hook
+
+Employer-sponsored insurance is structurally fragile for modern work:
+
+- A job change can mean a new network, new deductible, new doctors, and a new claims history.
+- COBRA keeps coverage alive but often at a price that feels punitive.
+- Freelancers, founders, consultants, and LLC owners are forced into individual-market plans without employer-style support.
+- Small employers want to help with healthcare but do not always want to manage a full group plan.
+- Early retirees and people approaching Medicare need continuity before they age into public coverage.
+
+ClearHealth gives employers a different role: contribute to the person's healthcare capital instead of owning the entire insurance relationship. The member keeps the plan and HSA strategy as life changes.
+
+## HSA Strategy
+
+The HSA is not an accessory in this model. It is the everyday spending engine.
+
+| HSA feature | Why it matters |
+|---|---|
+| **Member contributions** | Eligible members can contribute pre-tax or deduct contributions, subject to annual IRS limits. |
+| **Employer contributions** | Employers can contribute to the HSA where allowed, creating a benefit without making coverage employer-dependent. |
+| **Portable account** | HSA balances belong to the member and can carry across jobs, employers, and coverage transitions. |
+| **Transparent spend** | Cash-priced care and Cost Plus prescriptions make HSA dollars feel usable instead of abstract. |
+
+For 2026, IRS HDHP rules require minimum deductibles of $1,700 self-only / $3,400 family and maximum out-of-pocket exposure of $8,500 self-only / $17,000 family. ClearHealth's proposed plan design fits inside that HSA-compatible frame.
 
 ---
 
@@ -51,7 +82,7 @@ ClearHealth is purpose-built to work with the Cost Plus model:
 
 - **No PBM layer**: Members pay actual drug cost, not a formulary price. Admin overhead on Rx drops dramatically.
 - **API integration**: Real-time price lookup in the member portal shows exact drug costs before the patient walks into the pharmacy.
-- **HSA-compatible**: Pre-deductible Cost Plus purchases are HSA-eligible — members use their tax-advantaged account.
+- **HSA-compatible**: Pre-deductible Cost Plus purchases can be paid from the member's tax-advantaged account when eligible.
 - **Aligned incentives**: Both ClearHealth and Cost Plus benefit from removing the same middlemen.
 
 This plan is the first designed from scratch to route Rx through Cost Plus as the *default*, not an afterthought.
@@ -89,10 +120,10 @@ These are competitive with ACA Bronze HDHPs — but with real price transparency
 ClearHealth can scale through three structural approaches:
 
 **Option A — MGA Partner Model (fastest)**
-Partner with a licensed carrier. ClearHealth is the transparent pricing and UX layer. Revenue: ~$25 PMPM admin fee. Fastest to market; less control over fund logic.
+Partner with a licensed carrier. ClearHealth is the transparent pricing, HSA, and UX layer. Revenue: ~$25 PMPM admin fee. Fastest to market; less control over fund logic.
 
 **Option B — Member-Funded Pool (current model)**
-Members contribute to a trust, ClearHealth Admin Services LLC acts as licensed TPA. Full control. Non-ERISA, portable, individual coverage. Stop-loss protects the fund.
+Members contribute to a trust, ClearHealth Admin Services LLC acts as licensed TPA. Full control. Portable, individual coverage. Stop-loss protects the fund. Employers may support members through HSA contributions or defined contribution arrangements without owning the full plan relationship.
 
 **Option C — Captive Insurer (after scale)**
 After 2,000–3,000 members, form a regulated captive in Vermont, Delaware, or Hawaii. Assumes stop-loss risk, manages reserves. Becomes a member-owned structure with investment float.
@@ -108,7 +139,7 @@ After 2,000–3,000 members, form a regulated captive in Vermont, Delaware, or H
 | Year 2 | 3,000 | $12M |
 | Year 3+ | 10,000+ | $40M+ |
 
-Target markets: independent professionals, LLC owners, freelancers, small employers tired of opaque group plans.
+Target markets: independent professionals, LLC owners, freelancers, small employers tired of opaque group plans, workers facing COBRA, families priced out of employer-dependent coverage, and pre-Medicare members who need continuity.
 
 ---
 
@@ -137,10 +168,12 @@ Target markets: independent professionals, LLC owners, freelancers, small employ
 
 ## Why This, Why Now
 
+- Employer-sponsored insurance is losing fit with how people actually work: fractional careers, small businesses, consulting, remote work, and job changes.
+- COBRA exposes the real cost of employer coverage at the worst possible moment. ClearHealth gives people a portable option before the crisis.
 - The ACA created a generation of HDHP members who are already paying cash before their deductible — but without price transparency or fair rates. ClearHealth formalizes what they're already doing.
 - Reference-based pricing (120% Medicare) has been proven at scale by self-funded employers. ClearHealth brings it to individuals.
 - Cost Plus Drugs made Rx pricing transparent. The same model applies to medical care.
-- The TPA/member-pool structure avoids most insurance regulation while delivering real coverage — a legitimate regulatory arbitrage that favors the member.
+- The TPA/member-pool structure creates a path to portable individual coverage with employer-compatible funding support.
 
 ---
 
