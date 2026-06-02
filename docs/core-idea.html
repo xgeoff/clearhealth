@@ -116,8 +116,10 @@
           overflow: hidden;
         }
         th, td {
-          padding: 12px 16px;
+          padding: 16px 20px;
           border-bottom: 1px solid rgba(0,0,0,0.05);
+          line-height: 1.5;
+          vertical-align: top;
         }
         th {
           background: var(--brand);
@@ -166,8 +168,8 @@
         }
         table th:first-child,
           table td:first-child {
-            padding-left: 0.3rem;        /* ~8px */
-            padding-inline-start: 0.3rem; /* RTL/LTR friendly */
+            padding-left: 20px;
+            padding-inline-start: 20px;
           }
     </style>
 </head>
@@ -185,20 +187,20 @@
     </div>
 </header>
 <main>
-    <h1 id="core-idea-catastrophic-protection--reinsurance">Core Idea: Catastrophic Protection &amp; Reinsurance</h1>
+    <h1 id="core-idea-program-reinsurance-and-member-oop-protection">Core Idea: Program Reinsurance and Member OOP Protection</h1>
 <h2 id="-1-the-core-idea">🧱 1. The Core Idea</h2>
-<p>Catastrophic protection is what keeps your plan solvent when someone has a million-dollar year — think premature birth, cancer, or severe trauma.</p>
-<p>There are <strong>two main ways</strong> to achieve that protection:</p>
+<p>There are two separate protections in the model, and they serve different audiences:</p>
 <table>
 <thead>
-<tr><th>Type</th><th>Who Uses It</th><th>What It Covers</th></tr>
+<tr><th>Protection</th><th>Who it protects</th><th>What it does</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Stop-loss (Reinsurance)</strong></td><td>Self-funded plans, captives, TPAs</td><td>Large individual claims or high total claims</td></tr>
-<tr><td><strong>Catastrophic HDHP (Retail)</strong></td><td>Individual/family market</td><td>Direct consumer protection above a high deductible</td></tr>
+<tr><td><strong>Out-of-pocket maximum</strong></td><td>Member</td><td>Caps the member's covered expense exposure in a plan year.</td></tr>
+<tr><td><strong>Stop-loss / reinsurance</strong></td><td>Program / fund</td><td>Reimburses the plan after large claims so the program stays solvent.</td></tr>
 </tbody>
 </table>
-<p>Since you want an HSA-compatible, potentially self-funded product, <strong>stop-loss reinsurance</strong> is the key.</p>
+<p>The member-facing protection is the plan's maximum out-of-pocket limit. Stop-loss is a program-level financing tool. It is good for members because it keeps the program viable, but it does not pay the member directly.</p>
+<p>Since ClearHealth is an HSA-compatible, potentially self-funded product, <strong>stop-loss reinsurance</strong> is the key program-protection layer.</p>
 <h2 id="-2-stop-loss-reinsurance-basics">🛡️ 2. Stop-Loss Reinsurance Basics</h2>
 <p>A <strong>stop-loss policy</strong> reimburses your plan (not the member) once claims exceed a certain threshold.</p>
 <h3 id="two-primary-layers">Two primary layers:</h3>
@@ -207,8 +209,8 @@
 <tr><th>Type</th><th>Description</th><th>Example</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Specific (individual)</strong></td><td>Protects against a single person’s huge medical claim</td><td>Pays for any member whose claims &gt; $50,000</td></tr>
-<tr><td><strong>Aggregate (group)</strong></td><td>Protects against overall claims volatility</td><td>Pays if total annual claims &gt; 125% of expected</td></tr>
+<tr><td><strong>Specific (individual)</strong></td><td>Protects the program from one person’s huge medical claim</td><td>Reimburses the plan for claims above $50,000</td></tr>
+<tr><td><strong>Aggregate (group)</strong></td><td>Protects the program from overall claims volatility</td><td>Reimburses the plan if total annual claims &gt; 125% of expected</td></tr>
 </tbody>
 </table>
 <p>So your plan — whether you’re the sponsor or an administrator — pays normal claims up to the attachment point. Once someone crosses that line, the reinsurer covers the rest.</p>
@@ -236,7 +238,7 @@
 </ul>
 </li>
 </ul>
-<p>This prevents financial ruin for a small plan.</p>
+<p>This prevents financial ruin for a small plan. The member's protection still comes from the plan design: deductible, covered benefits, and maximum out-of-pocket limit.</p>
 <h2 id="-3-who-provides-it">🧩 3. Who Provides It</h2>
 <p>Stop-loss carriers and reinsurers specialize in this market:</p>
 <table>
@@ -280,11 +282,11 @@
 </li>
 </ol>
 <h2 id="-5-why-its-perfect-for-a-transparent-plan">📈 5. Why It’s Perfect for a Transparent Plan</h2>
-<p>A reinsurance structure allows you to:</p>
+<p>A reinsurance structure allows the program to:</p>
 <ul>
 <li><strong>Operate lean</strong> (you’re not a fully licensed insurer).</li>
 <li><strong>Keep premiums lower</strong>, since you only fund the expected claims + admin + stop-loss premium.</li>
-<li><strong>Offer real catastrophic protection</strong>, ensuring members aren’t bankrupted.</li>
+<li><strong>Stay viable after large claims</strong>, while the plan's OOP maximum limits member exposure.</li>
 <li><strong>Be flexible with innovation</strong> — Cost Plus, DPC, reference pricing, etc. — while still protected.</li>
 </ul>
 <p>This is the model used by <strong>many startup “health plans”</strong> like Decent, Sidecar, or Taro Health:

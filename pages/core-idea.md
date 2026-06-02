@@ -1,20 +1,20 @@
 ---
-title = "Core Idea: Catastrophic Protection & Reinsurance"
+title = "Core Idea: Program Reinsurance and Member OOP Protection"
 ---
-# Core Idea: Catastrophic Protection & Reinsurance
+# Core Idea: Program Reinsurance and Member OOP Protection
 
 ## 🧱 1. The Core Idea
 
-Catastrophic protection is what keeps your plan solvent when someone has a million-dollar year — think premature birth, cancer, or severe trauma.
+There are two separate protections in the model, and they serve different audiences:
 
-There are **two main ways** to achieve that protection:
+| Protection | Who it protects | What it does |
+| ---------- | --------------- | ------------ |
+| **Out-of-pocket maximum** | Member | Caps the member's covered expense exposure in a plan year. |
+| **Stop-loss / reinsurance** | Program / fund | Reimburses the plan after large claims so the program stays solvent. |
 
-| Type                           | Who Uses It                       | What It Covers                                     |
-| ------------------------------ | --------------------------------- | -------------------------------------------------- |
-| **Stop-loss (Reinsurance)**    | Self-funded plans, captives, TPAs | Large individual claims or high total claims       |
-| **Catastrophic HDHP (Retail)** | Individual/family market          | Direct consumer protection above a high deductible |
+The member-facing protection is the plan's maximum out-of-pocket limit. Stop-loss is a program-level financing tool. It is good for members because it keeps the program viable, but it does not pay the member directly.
 
-Since you want an HSA-compatible, potentially self-funded product, **stop-loss reinsurance** is the key.
+Since ClearHealth is an HSA-compatible, potentially self-funded product, **stop-loss reinsurance** is the key program-protection layer.
 
 
 
@@ -26,8 +26,8 @@ A **stop-loss policy** reimburses your plan (not the member) once claims exceed 
 
 | Type                      | Description                                           | Example                                        |
 | ------------------------- | ----------------------------------------------------- | ---------------------------------------------- |
-| **Specific (individual)** | Protects against a single person’s huge medical claim | Pays for any member whose claims > $50,000     |
-| **Aggregate (group)**     | Protects against overall claims volatility            | Pays if total annual claims > 125% of expected |
+| **Specific (individual)** | Protects the program from one person’s huge medical claim | Reimburses the plan for claims above $50,000     |
+| **Aggregate (group)**     | Protects the program from overall claims volatility            | Reimburses the plan if total annual claims > 125% of expected |
 
 So your plan — whether you’re the sponsor or an administrator — pays normal claims up to the attachment point. Once someone crosses that line, the reinsurer covers the rest.
 
@@ -52,7 +52,7 @@ Let’s say:
 
     * Aggregate reinsurance reimburses the $100,000 above the $2.5M threshold.
 
-This prevents financial ruin for a small plan.
+This prevents financial ruin for a small plan. The member's protection still comes from the plan design: deductible, covered benefits, and maximum out-of-pocket limit.
 
 
 
@@ -92,11 +92,11 @@ They underwrite based on:
 
 ## 📈 5. Why It’s Perfect for a Transparent Plan
 
-A reinsurance structure allows you to:
+A reinsurance structure allows the program to:
 
 * **Operate lean** (you’re not a fully licensed insurer).
 * **Keep premiums lower**, since you only fund the expected claims + admin + stop-loss premium.
-* **Offer real catastrophic protection**, ensuring members aren’t bankrupted.
+* **Stay viable after large claims**, while the plan's OOP maximum limits member exposure.
 * **Be flexible with innovation** — Cost Plus, DPC, reference pricing, etc. — while still protected.
 
 This is the model used by **many startup “health plans”** like Decent, Sidecar, or Taro Health:
@@ -156,5 +156,4 @@ Member → HSA / Direct Pay → Provider
                       ↓
               Plan stays solvent
 ```
-
 

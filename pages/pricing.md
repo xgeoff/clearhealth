@@ -158,4 +158,4 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * ClearHealth positioned as a trusted, modern alternative to traditional insurance
 
 **Summary:**
-ClearHealth begins as a transparent, member-funded health coverage pool, evolves into a technology-driven cooperative structure with stop-loss protection, and matures into a captive framework that gives members ownership and control of their healthcare funding. The thesis is that health coverage should be portable, HSA-centered, and employer-compatible without being employer-dependent.
+ClearHealth begins as a transparent, member-funded health coverage pool, evolves into a technology-driven cooperative structure with program-level stop-loss protection, and matures into a captive framework that gives members ownership and control of their healthcare funding. The thesis is that health coverage should be portable, HSA-centered, and employer-compatible without being employer-dependent.

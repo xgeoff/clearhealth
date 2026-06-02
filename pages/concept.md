@@ -8,7 +8,7 @@ title = "Concept: Bare-Bones HSA-Compatible Health Plan"
 Let’s call this prototype **ClearHealth Basic**.
 
 **Goal:**
-A portable, fully HSA-eligible, minimal-overhead, direct-pay plan that wraps catastrophic protection around transparent pricing (including prescriptions via Cost Plus Drugs).
+A portable, fully HSA-eligible, minimal-overhead, direct-pay plan that pairs transparent pricing with a clear member out-of-pocket maximum and program-level stop-loss protection (including prescriptions via Cost Plus Drugs).
 
 This is the key premise: ClearHealth is not supposed to be another employer-owned benefits product. It is coverage built around the member, with an HSA that the member owns and can keep across jobs, employers, and life changes.
 
@@ -18,7 +18,8 @@ This is the key premise: ClearHealth is not supposed to be another employer-owne
 | ------ | -------------- |
 | **Portable coverage** | The plan is designed to follow the member, not the employer. A job change should not reset the healthcare relationship. |
 | **HSA-first funding** | Eligible members can use pre-tax HSA dollars for routine care. Employers can contribute to the HSA without owning the whole coverage relationship. |
-| **High-deductible protection** | Routine care stays transparent and cash-priced; serious claims are backed by the plan and stop-loss protection. |
+| **Member OOP protection** | Routine care stays transparent and cash-priced; the plan's out-of-pocket maximum protects members from unlimited covered expenses. |
+| **Program reinsurance** | Stop-loss coverage protects the ClearHealth program from unusually large claims so the model stays financially viable. |
 | **Reference-based pricing** | Providers bill the posted cash price or a published reference rate such as 120% of Medicare, whichever is lower. |
 
 ## 🧮 Step 1: Regulatory Foundation — HSA Compatibility
@@ -135,4 +136,3 @@ Start as a **self-funded plan administrator** or **MGA (managing general agent)*
 * **Direct Primary Care (DPC)** membership subsidy.
 * **Wellness Rebate:** HSA bonus contribution for preventive screening.
 * **Transparent Imaging Add-on:** pre-negotiated MRI/CT centers at fixed prices.
-

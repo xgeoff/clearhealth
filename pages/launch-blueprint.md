@@ -12,7 +12,7 @@ title = "Launch Blueprint for ClearHealth Basic"
 | **Holding Co.**          | **ClearHealth LLC**                      | Owns brand, technology, and IP           | Formed as a Washington or Delaware LLC                         |
 | **Health Fund**          | **ClearHealth Basic Member Pool Trust**  | Holds and disburses member contributions | Legally distinct trust or custodial account for claims funds   |
 | **Administrator**        | **ClearHealth Admin Services LLC**       | Licensed TPA / service provider          | Handles enrollment, claims, eligibility, and member support    |
-| **Reinsurer**            | Symetra / QBE / HM Insurance             | Provides catastrophic stop-loss coverage | Per-member or aggregate stop-loss contract                     |
+| **Reinsurer**            | Symetra / QBE / HM Insurance             | Protects the program from unusually large claims | Per-member or aggregate stop-loss contract                     |
 | **HSA Custodian**        | Lively / HealthEquity / Fidelity         | Manages member HSAs                      | Members contribute directly; ClearHealth never holds HSA funds |
 | **Bank & Trust Partner** | Cross River / Piermont / Blue Ridge Bank | Custody and claim-float management       | Provides fiduciary segregation of member funds                 |
 

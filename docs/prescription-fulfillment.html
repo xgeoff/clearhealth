@@ -116,8 +116,10 @@
           overflow: hidden;
         }
         th, td {
-          padding: 12px 16px;
+          padding: 16px 20px;
           border-bottom: 1px solid rgba(0,0,0,0.05);
+          line-height: 1.5;
+          vertical-align: top;
         }
         th {
           background: var(--brand);
@@ -166,8 +168,8 @@
         }
         table th:first-child,
           table td:first-child {
-            padding-left: 0.3rem;        /* ~8px */
-            padding-inline-start: 0.3rem; /* RTL/LTR friendly */
+            padding-left: 20px;
+            padding-inline-start: 20px;
           }
     </style>
 </head>

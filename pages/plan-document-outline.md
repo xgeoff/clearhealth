@@ -134,7 +134,7 @@ No deductible or coinsurance applies.
 ## 10. Coordination with HSA
 
 * Members may establish an HSA with any qualified custodian.
-* Contributions limited per IRS 2025 rules ($4,300 self-only / $8,550 family + catch-up).
+* Contributions limited per IRS 2026 rules ($4,400 self-only / $8,750 family + catch-up).
 * Eligible expenses include deductibles, telehealth, prescriptions, and any §213(d) care.
 * Plan provides year-end reporting (Form 1099-SA / 5498-SA support).
 
@@ -149,11 +149,12 @@ No deductible or coinsurance applies.
 
 
 
-## 12. Stop-Loss and Catastrophic Protection
+## 12. Program Stop-Loss Protection
 
 For self-funded employers or individual aggregators:
 
-* Reinsurance attaches after $50,000 per member per year.
+* Reinsurance attaches after $50,000 per member per year and reimburses the plan, not the member.
+* Member exposure is governed by the deductible, covered benefits, and out-of-pocket maximum.
 * Administered by [Reinsurer Name].
 
 

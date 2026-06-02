@@ -31,9 +31,9 @@ ClearHealth is a **portable, HSA-compatible high-deductible health plan concept*
 | **HSA-first funding** | Eligible members use a Health Savings Account for routine care. Members can contribute directly; employers can contribute where allowed under IRS rules. |
 | **Transparent pricing** | Members always pay the *lower* of the posted cash price or 120% of Medicare. No networks to decode. No mystery bills. |
 | **Cost Plus Drugs integration** | Prescriptions routed through Mark Cuban's Cost Plus Drugs: cost + 15% + $3 fee. No PBM. No formulary. |
-| **Catastrophic safety net** | Stop-loss reinsurance kicks in at $50k per-member, protecting both members and the fund from high-cost events. |
+| **Member out-of-pocket cap** | The plan's maximum out-of-pocket limit protects members from unlimited covered expenses. Stop-loss reinsurance separately protects the program from claim volatility. |
 
-This is not just a cheaper plan design. It is a different ownership model: portable coverage, tax-advantaged healthcare savings, transparent routine care, and catastrophic protection.
+This is not just a cheaper plan design. It is a different ownership model: portable coverage, tax-advantaged healthcare savings, transparent routine care, a clear member out-of-pocket cap, and program-level reinsurance.
 
 ---
 
@@ -44,7 +44,7 @@ This is not just a cheaper plan design. It is a different ownership model: porta
 3. They use any doctor or pharmacy. The plan card tells providers: *"Bill your cash price or 120% of Medicare — whichever is lower."*
 4. Members pay routine care from HSA dollars until the deductible is met. The plan covers eligible expenses after that point.
 5. Prescriptions go through Cost Plus Drugs by default — dramatically lower than PBM pricing.
-6. Large claims ($50k+) are covered by stop-loss reinsurance — the fund never faces ruinous exposure.
+6. The member's covered exposure is limited by the plan's out-of-pocket maximum. Large claims trigger the program's stop-loss layer, which protects the fund from ruinous exposure and helps keep the program financially stable.
 7. Any year-end surplus is retained as reserves or rebated to members.
 
 ---
