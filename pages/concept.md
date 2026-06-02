@@ -47,7 +47,7 @@ That HSA portability is central. If a member changes employers, starts a company
 
 ## 💊 Step 2: Prescriptions — Cost Plus Integration
 
-**Cost Plus Drugs (Mark Cuban’s company):**
+**Cost Plus Drugs:**
 
 * Sells generic medications at **cost + 15% + $3 pharmacy fee + $5 shipping.**
 * No PBM middlemen, no formularies.

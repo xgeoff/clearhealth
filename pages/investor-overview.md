@@ -30,7 +30,7 @@ ClearHealth is a **portable, HSA-compatible high-deductible health plan concept*
 | **Portable member relationship** | Coverage is designed around the individual, not the employer. Employers can contribute, but the member owns continuity. |
 | **HSA-first funding** | Eligible members use a Health Savings Account for routine care. Members can contribute directly; employers can contribute where allowed under IRS rules. |
 | **Transparent pricing** | Members always pay the *lower* of the posted cash price or 120% of Medicare. No networks to decode. No mystery bills. |
-| **Cost Plus Drugs integration** | Prescriptions routed through Mark Cuban's Cost Plus Drugs: cost + 15% + $3 fee. No PBM. No formulary. |
+| **Prescription strategy** | Cost Plus is the preferred transparent mail-order channel; ClearHealthRx discount card coverage fills retail and non-Cost Plus gaps. |
 | **Member out-of-pocket cap** | The plan's maximum out-of-pocket limit protects members from unlimited covered expenses. Stop-loss reinsurance separately protects the program from claim volatility. |
 
 This is not just a cheaper plan design. It is a different ownership model: portable coverage, tax-advantaged healthcare savings, transparent routine care, a clear member out-of-pocket cap, and program-level reinsurance.
@@ -43,7 +43,7 @@ This is not just a cheaper plan design. It is a different ownership model: porta
 2. Members maintain an HSA tied to the HDHP structure. Contributions can come from the member and, where allowed, from an employer.
 3. They use any doctor or pharmacy. The plan card tells providers: *"Bill your cash price or 120% of Medicare — whichever is lower."*
 4. Members pay routine care from HSA dollars until the deductible is met. The plan covers eligible expenses after that point.
-5. Prescriptions go through Cost Plus Drugs by default — dramatically lower than PBM pricing.
+5. Prescriptions start with Cost Plus Drugs by default, with ClearHealthRx discount card pricing as the fallback for unavailable medications or local retail needs.
 6. The member's covered exposure is limited by the plan's out-of-pocket maximum. Large claims trigger the program's stop-loss layer, which protects the fund from ruinous exposure and helps keep the program financially stable.
 7. Any year-end surplus is retained as reserves or rebated to members.
 
@@ -76,16 +76,16 @@ For 2026, IRS HDHP rules require minimum deductibles of $1,700 self-only / $3,40
 
 ---
 
-## Why Cost Plus Drugs Matters Here
+## Prescription Strategy: Cost Plus + ClearHealthRx
 
-ClearHealth is purpose-built to work with the Cost Plus model:
+ClearHealth is purpose-built around a two-channel prescription strategy:
 
-- **No PBM layer**: Members pay actual drug cost, not a formulary price. Admin overhead on Rx drops dramatically.
-- **API integration**: Real-time price lookup in the member portal shows exact drug costs before the patient walks into the pharmacy.
-- **HSA-compatible**: Pre-deductible Cost Plus purchases can be paid from the member's tax-advantaged account when eligible.
-- **Aligned incentives**: Both ClearHealth and Cost Plus benefit from removing the same middlemen.
+- **Cost Plus first**: Members use transparent mail-order pricing when the medication is available.
+- **ClearHealthRx discount card fallback**: Members use the discount card for drugs not available through Cost Plus, urgent local fills, and retail pharmacy needs.
+- **Unified price lookup**: The member portal should show both options so the member can choose the better price and fulfillment path.
+- **HSA-compatible workflow**: Pre-deductible prescription purchases can be paid from the member's tax-advantaged account when eligible.
 
-This plan is the first designed from scratch to route Rx through Cost Plus as the *default*, not an afterthought.
+The point is not a single pharmacy partner. The point is a transparent prescription stack: Cost Plus where it works best, discount card coverage where Cost Plus does not reach.
 
 ---
 
@@ -111,7 +111,7 @@ This plan is the first designed from scratch to route Rx through Cost Plus as th
 | ClearHealth Core | $2,000 | $350 |
 | ClearHealth Family | $4,000 | $900 |
 
-These are competitive with ACA Bronze HDHPs — but with real price transparency and Cost Plus Rx.
+These are competitive with ACA Bronze HDHPs — but with real price transparency and an integrated Cost Plus + ClearHealthRx prescription strategy.
 
 ---
 
@@ -160,7 +160,7 @@ Target markets: independent professionals, LLC owners, freelancers, small employ
 | Stop-loss reinsurance | Symetra, QBE, HM Insurance |
 | HSA custody | Lively, HealthEquity, Fidelity |
 | TPA platform | Marpai, Gusto Benefits Infra |
-| Pharmacy | **Cost Plus Drugs** (primary) |
+| Pharmacy | **Cost Plus Drugs + ClearHealthRx discount card** |
 | Telehealth | Wheel, SteadyMD |
 | Bank / trust | Cross River, Piermont, Blue Ridge |
 
@@ -172,7 +172,7 @@ Target markets: independent professionals, LLC owners, freelancers, small employ
 - COBRA exposes the real cost of employer coverage at the worst possible moment. ClearHealth gives people a portable option before the crisis.
 - The ACA created a generation of HDHP members who are already paying cash before their deductible — but without price transparency or fair rates. ClearHealth formalizes what they're already doing.
 - Reference-based pricing (120% Medicare) has been proven at scale by self-funded employers. ClearHealth brings it to individuals.
-- Cost Plus Drugs made Rx pricing transparent. The same model applies to medical care.
+- Cost Plus Drugs and discount-card pricing made cash-pay Rx comparison familiar. The same transparency model applies to medical care.
 - The TPA/member-pool structure creates a path to portable individual coverage with employer-compatible funding support.
 
 ---
