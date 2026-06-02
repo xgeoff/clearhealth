@@ -113,7 +113,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 
 ### Phase 3 — Captive Formation (After Scale)
 
-* Apply for a captive license in Vermont, Delaware, or Hawaii.
+* Evaluate established captive domiciles and apply where the regulatory fit, capital requirements, healthcare-risk experience, and reinsurance access are strongest.
 * The captive reinsures the ClearHealth Fund and manages surplus reserves.
 * Optional step toward becoming a regulated mutual insurer.
 

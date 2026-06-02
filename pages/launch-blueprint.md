@@ -91,7 +91,7 @@ Year-end surplus → retained for reserves or rebated to members
 
 ### Step 3 – Captive or Health Co-op Formation (After Year 1–2)
 
-* Once claims data and membership stabilize, form a regulated captive (Delaware, Vermont, or Hawaii).
+* Once claims data and membership stabilize, evaluate established captive domiciles and form a regulated captive where the regulatory fit, capital requirements, healthcare-risk experience, and reinsurance access are strongest.
 * Captive assumes stop-loss risk and manages investment float.
 * Gains long-term control of reinsurance pricing and risk capital.
 

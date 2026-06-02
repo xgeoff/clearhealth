@@ -129,7 +129,7 @@ Partner with a licensed carrier. ClearHealth is the transparent pricing, HSA, an
 Members contribute to a trust, ClearHealth Admin Services LLC acts as licensed TPA. Full control. Portable, individual coverage. Stop-loss protects the fund. Employers may support members through HSA contributions or defined contribution arrangements without owning the full plan relationship.
 
 **Option C — Captive Insurer (after scale)**
-After 2,000–3,000 members, form a regulated captive in Vermont, Delaware, or Hawaii. Assumes stop-loss risk, manages reserves. Becomes a member-owned structure with investment float.
+After 2,000–3,000 members, evaluate established captive domiciles and form where the regulatory fit, capital requirements, healthcare-risk experience, and reinsurance access are strongest. The captive assumes stop-loss risk, manages reserves, and becomes a member-aligned structure with investment float.
 
 ---
 
@@ -152,7 +152,7 @@ Target markets: independent professionals, LLC owners, freelancers, small employ
 
 **Phase 2:** Member-funded pool. Stop-loss protects the fund against catastrophic claims. Outside ERISA. Individual, portable coverage.
 
-**Phase 3:** Captive formation. Delaware, Vermont, or Hawaii. Long-term control of reinsurance pricing and risk capital.
+**Phase 3:** Captive formation. Domicile selected after legal, actuarial, and reinsurance review. Long-term control of reinsurance pricing and risk capital.
 
 ---
 
