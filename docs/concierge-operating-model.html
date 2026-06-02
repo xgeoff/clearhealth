@@ -59,16 +59,22 @@
           background: conic-gradient(from 220deg, var(--brand), var(--brand-2), var(--accent-green), var(--brand));
           box-shadow: 0 4px 10px rgba(0, 119, 182, 0.25);
         }
-        nav a {
+        .nav {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .nav a {
           margin-left: 18px;
           color: var(--text);
           text-decoration: none;
           font-weight: 600;
           font-size: 15px;
           line-height: 1.3;
+          font-family: Inter, system-ui, sans-serif;
         }
-        nav a:hover { color: var(--brand-2); }
-        nav a.nav-highlight {
+        .nav a:hover { color: var(--brand-2); }
+        .nav a.nav-highlight {
           color: #4946C0;
           border: 1px solid rgba(79,70,229,0.25);
           padding: 6px 10px;
@@ -76,7 +82,7 @@
           font-size: 15px;
           line-height: 1.3;
         }
-        nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
+        .nav a.nav-highlight:hover { background: rgba(79,70,229,0.06); text-decoration: none; }
 
         main {
           max-width: 800px;
@@ -172,9 +178,39 @@
         .foot-nav a:hover { color: var(--brand-2); }
         .foot-inner small { display: block; width: 100%; color: var(--muted); }
 
+        @media (max-width: 960px) {
+          .nav a {
+            margin-left: 8px;
+            font-size: 15px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .nav-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+          }
+          .nav {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 6px;
+          }
+          .nav a {
+            margin-left: 0;
+            display: block;
+            padding: 8px 0;
+            font-size: 15px;
+          }
+          .nav a.nav-highlight {
+            padding: 8px 0;
+            border: 0;
+          }
+        }
+
         @media (max-width: 600px) {
           main { margin: 40px auto; }
-          nav a { margin-left: 10px; font-size: 15px; }
           ul, ol { max-width: 100%; padding-left: 20px; }
         }
         table th:first-child,
@@ -188,7 +224,7 @@
 <header>
     <div class="nav-wrap">
         <div class="brand"><span class="brand-mark"><img src="./images/logo.png" alt="ClearHealth Logo"></span><span>Clear<strong>Health</strong></span></div>
-        <nav>
+        <nav class="nav">
             <a href="index.html">Home</a>
             <a href="concept.html">The Plan</a>
             <a href="pricing.html">Pricing</a>
