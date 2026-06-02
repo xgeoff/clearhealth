@@ -8,7 +8,7 @@ The core business case is not only lower cost. It is portability: coverage that 
 
 ## 💵 1. Pricing: What You Could Realistically Offer It For
 
-These estimates are based on realistic assumptions for a transparent, member-funded health plan that uses reference-based pricing and stop-loss protection.
+These estimates are based on realistic assumptions for a transparent, member-funded health plan that uses reference-based pricing and program-level stop-loss protection.
 
 ### Core assumptions
 
@@ -19,27 +19,27 @@ These estimates are based on realistic assumptions for a transparent, member-fun
 * **HSA funding:** member contributions plus optional employer contributions where allowed
 * **Target market:** healthy to average-risk individuals, families, freelancers, LLC owners, small employers, and workers facing COBRA or job transitions
 
-| Cost Component              | Range (PMPM) | Description                                  |
-| --------------------------- | ------------ | -------------------------------------------- |
-| **Expected medical claims** | $200 – $300  | Preventive, routine, and moderate acute care |
-| **Stop-loss reinsurance**   | $80 – $120   | Depends on attachment level and demographics |
-| **Administrative + TPA**    | $25 – $40    | Claims, eligibility, and member support      |
-| **Tech / platform fees**    | $5 – $10     | Portal, HSA integrations, Cost Plus API      |
-| **Margin / reserves**       | $15 – $30    | Operating margin and risk reserves           |
+| Cost Component              | Range per member per month | Description                                  |
+| --------------------------- | -------------------------- | -------------------------------------------- |
+| **Expected medical claims** | $290 – $320                | Preventive, routine, and moderate acute care |
+| **Program stop-loss / reinsurance** | $60 – $85         | Protects the fund from unusually large claims |
+| **Administrative + TPA**    | $35 – $45                  | Claims, eligibility, payments, and member support |
+| **Tech / platform fees**    | $10 – $20                  | Portal, HSA integrations, Cost Plus + ClearHealthRx pricing |
+| **Margin / reserves**       | $25 – $45                  | Operating margin and risk reserves           |
 
 ### Estimated Total Monthly Contribution
 
 | Tier              | Self-Only            | Family                 |
 | ----------------- | -------------------- | ---------------------- |
-| **Base estimate** | **$325 – $400 PMPM** | **$850 – $1,050 PMPM** |
+| **Launch target** | **$450 per month**   | **$1,150 per month**   |
 
-This equates to roughly **$3,900 – $4,800 per year for an individual**, competitive with ACA bronze HDHPs but with clear pricing, Cost Plus prescriptions, no network restrictions, and a portable HSA strategy.
+This equates to roughly **$5,400 per year for an individual**, competitive with unsubsidized ACA bronze HDHP pricing for many members while offering clear pricing, Cost Plus + ClearHealthRx prescriptions, no network restrictions, and a portable HSA strategy.
 
 | Variant                | Deductible | Monthly Contribution | Audience                             |
 | ---------------------- | ---------- | -------------------- | ------------------------------------ |
-| **ClearHealth Lite**   | $3,000     | $280 PMPM            | Younger, low-utilization individuals |
-| **ClearHealth Core**   | $2,000     | $350 PMPM            | Standard member profile              |
-| **ClearHealth Family** | $4,000     | $900 PMPM            | Two adults plus children             |
+| **ClearHealth Lite**   | $3,000     | $425 per month       | Younger, low-utilization individuals |
+| **ClearHealth Core**   | $2,000     | $450 per month       | Standard member profile              |
+| **ClearHealth Family** | $4,000     | $1,150 per month     | Two adults plus children             |
 
 ### Why portability changes the value proposition
 
@@ -60,7 +60,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 * Partner with a licensed carrier that already offers HSA-eligible HDHP coverage.
 * ClearHealth provides the portable member relationship, HSA experience, transparent pricing layer, and member-facing platform.
 * Operate as a Managing General Agent (MGA) or Managing General Underwriter (MGU).
-* Revenue: per-member admin fee (around $25 PMPM) and shared margin with the carrier.
+* Revenue: per-member admin fee (around $25 per month) and shared margin with the carrier.
 
 **Advantages:** fastest route to market, leverages carrier licensing and compliance.
 **Limitations:** less control over underwriting, claims, and fund logic.
@@ -89,7 +89,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 
 | Revenue Stream           | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ |
-| **Admin Fee**            | Fixed PMPM for claims, tech, and member support              |
+| **Admin Fee**            | Fixed per-member monthly fee for claims, tech, and member support |
 | **Stop-Loss Commission** | 5–10% margin on reinsurance contracts                        |
 | **Investment Float**     | Interest earned on fund reserves                             |
 | **Data & Insights**      | Aggregated transparency analytics for partners               |
@@ -134,7 +134,7 @@ ClearHealth can scale through three structural approaches, each with its own tim
 
 **Revenue mix at scale:**
 
-* 80% member contributions and claims flow
+* 70% member contributions and claims flow
 * 10% reinsurance commissions
 * 10% data and wellness insights
 

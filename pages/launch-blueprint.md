@@ -26,8 +26,9 @@ Member → enrolls → pays monthly contribution
 Member and/or employer funds member-owned HSA
         ↓
 Funds split into:
-   - Member Claim Fund (≈ 80 %)
-   - Admin + Stop-Loss Premium (≈ 20 %)
+   - Member Claim Fund
+   - Program stop-loss / reinsurance
+   - Administration, technology, compliance, and reserves
         ↓
 Member uses telehealth / Cost Plus / direct-care providers
         ↓
@@ -42,31 +43,33 @@ Year-end surplus → retained for reserves or rebated to members
 ### Assumptions
 
 * 1 000 members (average risk)
-* $350 PMPM contribution
-* $325 average PMPM medical + admin cost
-* 10 % target reserve margin
+* $450 per member per month individual contribution target
+* $300 per member per month expected claims fund
+* $75 per member per month program stop-loss / reinsurance budget
+* Reserve margin built into the contribution rather than treated as an afterthought
 
-| Category                              | PMPM                        | Annual Total |
-| ------------------------------------- | --------------------------- | ------------ |
-| **Member Contributions**              | $350 × 1 000 × 12 = $4.2 M  | $4 200 000   |
-| **Expected Claims (80 %)**            | $280 × 1 000 × 12 = $3.36 M | $3 360 000   |
-| **Stop-Loss Premium (8 %)**           | $28 × 1 000 × 12 = $336 k   | $336 000     |
-| **Admin + Tech (8 %)**                | $28 × 1 000 × 12 = $336 k   | $336 000     |
-| **Operating Margin / Reserves (4 %)** | ≈ $168 k                    | $168 000     |
+| Category                                      | Per Member per Month        | Annual Total |
+| --------------------------------------------- | --------------------------- | ------------ |
+| **Member Contributions**                      | $450 × 1 000 × 12 = $5.4 M  | $5 400 000   |
+| **Expected Claims Fund**                      | $300 × 1 000 × 12 = $3.6 M  | $3 600 000   |
+| **Program Stop-Loss / Reinsurance**           | $75 × 1 000 × 12 = $900 k   | $900 000     |
+| **Admin, TPA, Payments, Support**             | $40 × 1 000 × 12 = $480 k   | $480 000     |
+| **Tech, Pharmacy Integration, Compliance**    | $15 × 1 000 × 12 = $180 k   | $180 000     |
+| **Reserve / Operating Margin**                | $20 × 1 000 × 12 = $240 k   | $240 000     |
 
-➡ **Projected Year-1 Surplus:** ≈ $168 k (4 %) — used for marketing, reserves, or member rebates.
-➡ If claims run below expected, surplus rises to 10 – 12 %.
+➡ **Projected Year-1 Reserve / Operating Margin:** ≈ $240 k — used for operating cushion, growth, compliance, or member-aligned surplus policy.
+➡ If claims run below expected, surplus can be retained for reserves or rebated under the program rules.
 
 ## 🧾 4. Capital & Regulatory Requirements
 
 | Category                      | Requirement                                          | Est. Cost     |
 | ----------------------------- | ---------------------------------------------------- | ------------- |
-| **Initial Capital**           | Reserve ≈ 2 months of claims + operations            | $700 k – $1 M |
-| **Stop-Loss Premium Deposit** | One month upfront                                    | $25 – 50 k    |
+| **Initial Capital**           | Reserve ≈ 2 months of claims + operations            | $900 k – $1.1 M |
+| **Stop-Loss Premium Deposit** | One month upfront                                    | $75 – 100 k   |
 | **Legal & Compliance**        | Trust docs, TPA filing, contracts, member agreements | $50 – 100 k   |
 | **Tech MVP Build**            | Member portal + claims ledger API                    | $100 – 150 k  |
 
-➡ **Target capital to launch:** ≈ **$1.0 – 1.3 M** (including operational float).
+➡ **Target capital to launch:** ≈ **$1.1 – 1.4 M** (including operational float).
 
 ## ⚖️ 5. Regulatory Path
 
@@ -97,9 +100,9 @@ Year-end surplus → retained for reserves or rebated to members
 | Phase            | Members   | Revenue         | Notes                                    |
 | ---------------- | --------- | --------------- | ---------------------------------------- |
 | **Pilot (6 mo)** | 100 – 250 | $100 k – $300 k | Demonstrate loss ratio < 85 %            |
-| **Year 1**       | 1 000     | $4.2 M          | Add reinsurance partner                  |
-| **Year 2**       | 3 000     | $12 M           | Introduce DPC & wellness add-ons         |
-| **Year 3 +**     | 10 000 +  | $40 M +         | Captive conversion + multi-state filings |
+| **Year 1**       | 1 000     | $5.4 M          | Add reinsurance partner                  |
+| **Year 2**       | 3 000     | $16.2 M         | Introduce DPC & wellness add-ons         |
+| **Year 3 +**     | 10 000 +  | $54 M +         | Captive conversion + multi-state filings |
 
 ## 🔐 7. Key Partnerships
 

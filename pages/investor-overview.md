@@ -93,23 +93,26 @@ The point is not a single pharmacy partner. The point is a transparent prescript
 
 **Year 1 Projections (1,000 members)**
 
-| Category | PMPM | Annual Total |
-|---|---|---|
-| Member Contributions | $350 | $4,200,000 |
-| Expected Claims (80%) | $280 | $3,360,000 |
-| Stop-Loss Premium (8%) | $28 | $336,000 |
-| Admin + Tech (8%) | $28 | $336,000 |
-| **Operating Surplus (4%)** | **$14** | **$168,000** |
+The central planning assumption is **$450 per member per month** for individual coverage. That is intentionally closer to unsubsidized lowest-cost Bronze marketplace pricing for a 40-year-old, while giving ClearHealth enough room for claims, program-level reinsurance, administration, and reserves.
 
-**Capital required to launch:** $1.0 – 1.3M (2-month claims reserve + stop-loss deposit + legal/tech)
+| Category | Per member per month | Annual Total |
+|---|---:|---:|
+| Member Contributions | $450 | $5,400,000 |
+| Expected Claims Fund | $300 | $3,600,000 |
+| Program Stop-Loss / Reinsurance | $75 | $900,000 |
+| Admin, TPA, Payments, Support | $40 | $480,000 |
+| Tech, Pharmacy Integration, Compliance | $15 | $180,000 |
+| **Reserve / Operating Margin** | **$20** | **$240,000** |
+
+**Capital required to launch:** $1.1 – 1.4M (2-month claims and operating reserve + stop-loss deposit + legal/tech)
 
 **Monthly contribution pricing:**
 
 | Plan | Deductible | Monthly |
 |---|---|---|
-| ClearHealth Lite | $3,000 | $280 |
-| ClearHealth Core | $2,000 | $350 |
-| ClearHealth Family | $4,000 | $900 |
+| ClearHealth Core | $2,000 | $450 individual target |
+| ClearHealth Lite | $3,000 | $425 lower-utilization target |
+| ClearHealth Family | $4,000 | $1,150 family target |
 
 These are competitive with ACA Bronze HDHPs — but with real price transparency and an integrated Cost Plus + ClearHealthRx prescription strategy.
 
@@ -120,7 +123,7 @@ These are competitive with ACA Bronze HDHPs — but with real price transparency
 ClearHealth can scale through three structural approaches:
 
 **Option A — MGA Partner Model (fastest)**
-Partner with a licensed carrier. ClearHealth is the transparent pricing, HSA, and UX layer. Revenue: ~$25 PMPM admin fee. Fastest to market; less control over fund logic.
+Partner with a licensed carrier. ClearHealth is the transparent pricing, HSA, and UX layer. Revenue: approximately $25 per member per month admin fee. Fastest to market; less control over fund logic.
 
 **Option B — Member-Funded Pool (current model)**
 Members contribute to a trust, ClearHealth Admin Services LLC acts as licensed TPA. Full control. Portable, individual coverage. Stop-loss protects the fund. Employers may support members through HSA contributions or defined contribution arrangements without owning the full plan relationship.
@@ -135,9 +138,9 @@ After 2,000–3,000 members, form a regulated captive in Vermont, Delaware, or H
 | Phase | Members | Revenue |
 |---|---|---|
 | Pilot (6 months) | 100 – 250 | $100k – $300k |
-| Year 1 | 1,000 | $4.2M |
-| Year 2 | 3,000 | $12M |
-| Year 3+ | 10,000+ | $40M+ |
+| Year 1 | 1,000 | $5.4M |
+| Year 2 | 3,000 | $16.2M |
+| Year 3+ | 10,000+ | $54M+ |
 
 Target markets: independent professionals, LLC owners, freelancers, small employers tired of opaque group plans, workers facing COBRA, families priced out of employer-dependent coverage, and pre-Medicare members who need continuity.
 
@@ -147,7 +150,7 @@ Target markets: independent professionals, LLC owners, freelancers, small employ
 
 **Phase 1 (Now):** Operate as a TPA. Register ClearHealth Admin Services LLC. No insurance license required — the fund is member-owned and fully disclosed. Contract with stop-loss carriers and HSA custodians.
 
-**Phase 2:** Member-funded pool. Stop-loss protects against catastrophic claims. Outside ERISA. Individual, portable coverage.
+**Phase 2:** Member-funded pool. Stop-loss protects the fund against catastrophic claims. Outside ERISA. Individual, portable coverage.
 
 **Phase 3:** Captive formation. Delaware, Vermont, or Hawaii. Long-term control of reinsurance pricing and risk capital.
 
@@ -183,7 +186,7 @@ This is a working proposal and design document. We are looking for:
 
 - **Strategic partners** in reinsurance, pharmacy, and fintech
 - **Early members** willing to join a transparent pilot cohort
-- **Investors** interested in a capital-efficient path to a $40M+ revenue insurance alternative
+- **Investors** interested in a capital-efficient path to a $54M+ revenue insurance alternative
 
 **Contact:** See the [Launch Blueprint](launch-blueprint.html) for next steps and entity structure details.
 

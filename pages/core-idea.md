@@ -81,7 +81,7 @@ They underwrite based on:
 2. **You (or an employer) act as the plan sponsor** — paying claims directly or through a TPA.
 3. **You buy stop-loss coverage** from a reinsurer.
 
-    * Premium is typically **$80–$150 PMPM (per member per month)** for good-risk groups.
+    * Premium is typically **$80–$150 per member per month** for good-risk groups.
 4. **Claims process:**
 
     * Claims < $50k → paid normally.
@@ -97,7 +97,7 @@ A reinsurance structure allows the program to:
 * **Operate lean** (you’re not a fully licensed insurer).
 * **Keep premiums lower**, since you only fund the expected claims + admin + stop-loss premium.
 * **Stay viable after large claims**, while the plan's OOP maximum limits member exposure.
-* **Be flexible with innovation** — Cost Plus, DPC, reference pricing, etc. — while still protected.
+* **Be flexible with innovation** — Cost Plus, DPC, reference pricing, etc. — while keeping the program financially protected.
 
 This is the model used by **many startup “health plans”** like Decent, Sidecar, or Taro Health:
 they’re technically *administrators* for a self-funded plan with stop-loss coverage layered behind it.
@@ -111,7 +111,7 @@ they’re technically *administrators* for a self-funded plan with stop-loss cov
 | **Member Premium**       | Individual/employer | Goes into plan’s claim fund                |
 | **Claim Fund**           | Plan                | Pays small/medium claims                   |
 | **Admin Fee**            | Plan                | Pays TPA, app, compliance costs            |
-| **Stop-Loss Premium**    | Plan                | Pays reinsurer for catastrophic protection |
+| **Stop-Loss Premium**    | Plan                | Pays reinsurer for program-level catastrophic protection |
 | **Reinsurance Recovery** | Reinsurer → Plan    | Reimburses catastrophic claims             |
 
 You could also structure **risk corridors** (e.g., reinsurer shares 50/50 between $50k–$150k, then 100% above).
@@ -125,7 +125,7 @@ You could also structure **risk corridors** (e.g., reinsurer shares 50/50 betwee
 * **Stop-loss reinsurer:** Symetra or QBE.
 * **Specific attachment:** $50,000 per member.
 * **Aggregate attachment:** 125% of expected claims.
-* **Admin + stop-loss premium:** ~$130 PMPM total.
+* **Admin + stop-loss premium:** approximately $130 per member per month total.
 * **Member deductible:** $2,000.
 * **Plan pays 100% after deductible.**
 
@@ -156,4 +156,3 @@ Member → HSA / Direct Pay → Provider
                       ↓
               Plan stays solvent
 ```
-
